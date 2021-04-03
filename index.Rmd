@@ -1,0 +1,45 @@
+--- 
+title: "EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online"
+author: 
+- "Chen Tong"
+- "http://www.ehbio.com/test/venn"
+- "chent@nrc.ac.cn"
+date: "`r Sys.Date()`"
+documentclass: article
+site: bookdown::bookdown_site
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+output <- opts_knit$get("rmarkdown.pandoc.to")
+output <- "html"
+html = FALSE
+latex = FALSE
+opts_chunk$set(echo = TRUE, out.width="100%", fig.align="center", fig.show="hold", warning=FALSE, message=FALSE)
+if (output=="html") {
+	html = TRUE
+}
+if (output=="latex") {
+	opts_chunk$set(out.width="95%", out.height='0.7\\textheight', out.extra='keepaspectratio=true', fig.pos='H')
+	latex = TRUE
+}
+html = TRUE
+knitr::opts_chunk$set(cache=TRUE, autodep=TRUE)
+mtime <- function(files){
+  lapply(Sys.glob(files), function(x) file.info(x)$mtime)
+}
+set.seed(0304)
+```
+
+```{asis, echo=html}
+
+# Overview of EVenn {-}
+
+We construct an on-line tool called EVenn to generate venn diagrams (classical and Edwards layout), Euler diagrams (proportional), Flower plot, Upset view and Network venn. Specially, we developed one unified format data matrix as inputs for all tools. This type of input data could be easily prepared using Excel or other text-editors or simple programs. Then users could easily transfer from one type of displaying to other types without tedious changing data format. This makes Evenn a more suitable tool for exploratory analysis and to choose the best way to explain and visualize data. In order to compute the significance of the overlap between two groups of items which could be genes or OTUs, random sample test and Jaccard similarity test were applied. The tool Venn calculator could generate the counts and detailed items for each non-empty intersection for datasets with any number of groups. The results could be used for downstream selection and also could be used as input for data visualization using EVenn. Evenn is available at http://www.ehbio.com/test/venn/.
+
+```
+
+
+
+
+

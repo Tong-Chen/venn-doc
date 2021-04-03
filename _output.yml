@@ -1,0 +1,22 @@
+bookdown::pdf_book:
+  template: ehbio/ehbio.latex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+  toc_unnumbered: no
+  toc_depth: 3
+bookdown::epub_book: default
+bookdown::gitbook:
+  keep_md: true
+  css: style.css
+  config:
+    download: [pdf]
+    toc:
+      before: |
+          <li><a href="http://https://mp.weixin.qq.com/s/i71OMaUu6QtcY0pt1njHQA"><img src="http://www.ehbio.com/logos/ehbio_gitbook_logo.png" width="95%"></a></li>
+      after: |
+          <li><a href="mailto:chentong_biology@163.com" target="blank">chentong_biology@163.com</a></li>
+    sharing: 
+      github: no
+      facebook: no
+      twitter: no
