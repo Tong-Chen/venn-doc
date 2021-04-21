@@ -2,9 +2,9 @@
 title: "EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online"
 author: 
 - "Chen Tong"
-- "www.ehbio.com/test/venn"
+- "http://www.ehbio.com/test/venn"
 - "chent@nrc.ac.cn"
-date: "2021-04-02"
+date: "2021-04-20"
 documentclass: article
 site: bookdown::bookdown_site
 ---
@@ -12,8 +12,9 @@ site: bookdown::bookdown_site
 
 
 
-# Machine learning {-}
+# Overview of EVenn {-}
 
+we construct an on-line tool called EVenn to generate venn diagrams (classical and Edwards layout), Euler diagrams (proportional), Flower plot, Upset and Venn network. Specially, we developed one unified data matrix as inputs for all tools. This type of input data could be easily prepared using Excel or other text-editors or simple programs. Once uploaded, the data file could be easily loaded to each tool to generate various displaying. This makes EVenn a more suitable tool for exploratory analysis and to choose the best way to explain and visualize data. In order to compute the significance of the overlap between two groups of elements which could be genes or OTUs, random sample test and Jaccard similarity test were applied. The tool Venn calculator could generate the counts and detailed elements for each non-empty intersection for datasets with any number of groups. The results could be used for downstream selection and also could be used as input for data visualization using EVenn. Evenn is available at http://www.ehbio.com/test/venn/.
 
 
 
@@ -22,9 +23,94 @@ site: bookdown::bookdown_site
 
 <!--chapter:end:index.Rmd-->
 
+# Input file format
+
+## Unified two-column matrix
+
+In EVenn, we unified the input data in one simple format for all tools. It is a two-column regular matrix with 
+
+1. the `first` column containing elements by rows 
+2. and the `second` column specifies the set each item belongs to, so we named it as **two-column mode** (\@ref(fig:fig1) A-D). 
+3. If one item belongs to several sets, it may appear in several rows. 
+4. The order of rows does not matter. 
+5. The order of columns matters at least for interactive venn diagrams. 
+
+This type of data could be easily generated using Excel or other text-editors with just ‘copy-paste’ operations. It could also be generated program-ably in any analysis pipeline with addition or changing only few codes. 
+
+Another advantage of this specified format is that it is both human and machine readable, and could be saved for repeatable usages. Based on the unified input format, it is feasible to generate and compare different visualization ways during the data exploring stage and result showing stage. Leaving out of the trouble of file format changing for separate tools, which is essential and not so trivial for researchers who could not program.  
+
+
+```r
+knitr::include_graphics("image/Fig1.png")
+```
+
+<div class="figure" style="text-align: center">
+<img src="image/Fig1.png" alt="Illustration of input data formats. A. The general example of two-column data matrix. B, C, and D represent specified examples for gene sets, OTUs sets and pathway sets respectively. E. Pasting elements for each set separately. F. Typing counts for each intersection. G. Binary matrix format. " width="100%" />
+<p class="caption">(\#fig:fig1)Illustration of input data formats. A. The general example of two-column data matrix. B, C, and D represent specified examples for gene sets, OTUs sets and pathway sets respectively. E. Pasting elements for each set separately. F. Typing counts for each intersection. G. Binary matrix format. </p>
+</div>
+
+Besides, the classical input formats for each tool were also preserved for meeting various requirements. For example:
+
+1. Pasting elements for each set separately and naming each set on the fly for interactive venn diagram (\@ref(fig:fig1) E).
+2. Input the counts of items of each intersections instead of related elements to draw interactive venn diagrams and euler diagrams (\@ref(fig:fig1) F). This is useful for counting data such as cell immunofluorescence experiments how many cells are stained as red, how many cells are stained as green, how many cells have merged color of blue. 
+3. UpSet also supports a binary matrix for illustrating elements existence  (\@ref(fig:fig1) G). In this format, the first line is the header line containing names of all sets. Each row represents one element. Each column represents each set. Each row represents one element. A value of non-zero representing the corresponding element belongs to the corresponding set.
+
+
+
+
+<!--chapter:end:01.InputFileFormat.Rmd-->
+
+# Upload files in data center
+
+*Attention*: The files would not be uploaded to our server in this step. They only exist in a local region in your web browser. These uploaded files would be lost after the web browser is closed. Also, one could not see these uploaded data in other web browsers. 
+
+
+## Upload a file
+
+1. Drag your file or click to upload your file (\@ref(fig:figdatacenter1) <font color="#FF0000">1</font> step).
+2. Input a name for your file for identification (\@ref(fig:figdatacenter1) <font color="#FF0000">2</font> step).
+3. The content of the uploaded file would be loaded into the text area (\@ref(fig:figdatacenter1) <font color="#FF0000">3</font> step). Users are allowed to browse and revise uploaded data if necessary.
+4. Remember to click **Save** or **Submit** to finish the uploading process (\@ref(fig:figdatacenter1) <font color="#FF0000">4</font> step).
+5. Then your uploaded file would be shown in the file selector (\@ref(fig:figdatacenter1) <font color="#FF0000">5</font> step). One can browse or delete unneeded files.
+
+
+```r
+knitr::include_graphics("image/Datacenter1.png")
+```
+
+<div class="figure" style="text-align: center">
+<img src="image/Datacenter1.png" alt="Upload your files." width="100%" />
+<p class="caption">(\#fig:figdatacenter1)Upload your files.</p>
+</div>
+
+
+## Paste your data here
+
+1. Input a name for your file for identification (\@ref(fig:figdatacenter2) <font color="#FF0000">1</font> step).
+2. Paste the data matrix to the text area (\@ref(fig:figdatacenter2) <font color="#FF0000">2</font> step). 
+3. Remember to click **Save** or **Submit** to finish the saving process (\@ref(fig:figdatacenter2) <font color="#FF0000">3</font> step).
+4. Then your uploaded file would be shown in the file selector (\@ref(fig:figdatacenter2) <font color="#FF0000">4</font> step). One can browse or delete unneeded files.
+
+
+
+```r
+knitr::include_graphics("image/Datacenter1.png")
+```
+
+<div class="figure" style="text-align: center">
+<img src="image/Datacenter1.png" alt="Paste your files." width="100%" />
+<p class="caption">(\#fig:figdatacenter2)Paste your files.</p>
+</div>
+
+
+## Example files
+
+
+<!--chapter:end:02.Datacenter.Rmd-->
+
 # Overview
 
-## All-in-one venn diagram platform
+## Many-in-one venn diagram platform
 
 Evenn was designed as a web-application featured with 7 different modules, including interactive venn diagram, high quality euler diagram, flower plot, upset view plot, network venn, statistical significance computation for intersections and venn calculator for generating items and counts of all types of intersections for data with any number of sets. Each function was split into separate tabs for fast access and with one demo data for quick starting. Users are allowed to set font family, font size, area colors, area shapes, line types, image width, image height, set order for one or several modules to generate publication-quality outputs. Each module also has some special parameters for flexible usages.
 
@@ -68,5 +154,5 @@ Visualization would give qualitative but not quantitative estimation of sets sim
 
 There are also scenes that we want to quickly select candidate items like genes or OTUs for downstream analysis before generating plots. Venn calculator is designed to output items for intersections for any number of sets in table format for further exploring. Besides, the output could be easily given to Euler diagram to generate plots without computing again. 
 
-<!--chapter:end:01.Introduction.Rmd-->
+<!--chapter:end:10.Introduction.Rmd-->
 
