@@ -5,11 +5,11 @@
 
 ## Upload a file
 
-1. Drag your file or click to upload your file (\@ref(fig:figdatacenter1) <font color="#FF0000">1</font> step).
-2. Input a name for your file for identification (\@ref(fig:figdatacenter1) <font color="#FF0000">2</font> step).
-3. The content of the uploaded file would be loaded into the text area (\@ref(fig:figdatacenter1) <font color="#FF0000">3</font> step). Users are allowed to browse and revise uploaded data if necessary.
-4. Remember to click **Save** or **Submit** to finish the uploading process (\@ref(fig:figdatacenter1) <font color="#FF0000">4</font> step).
-5. Then your uploaded file would be shown in the file selector (\@ref(fig:figdatacenter1) <font color="#FF0000">5</font> step). One can browse or delete unneeded files.
+1. Drag your file or click to upload your file (Fig \@ref(fig:figdatacenter1) <font color="#FF0000">1</font> step).
+2. Input a name for your file for identification (Fig \@ref(fig:figdatacenter1) <font color="#FF0000">2</font> step).
+3. The content of the uploaded file would be loaded into the text area (Fig \@ref(fig:figdatacenter1) <font color="#FF0000">3</font> step). Users are allowed to browse and revise uploaded data if necessary.
+4. Remember to click **Save** or **Submit** to finish the uploading process (Fig \@ref(fig:figdatacenter1) <font color="#FF0000">4</font> step).
+5. Then your uploaded file would be shown in the file selector (Fig \@ref(fig:figdatacenter1) <font color="#FF0000">5</font> step). One can browse or delete unneeded files.
 
 ```{r figdatacenter1, fig.cap="Upload your files."}
 knitr::include_graphics("image/Datacenter1.png")
@@ -18,10 +18,10 @@ knitr::include_graphics("image/Datacenter1.png")
 
 ## Paste your data here
 
-1. Input a name for your file for identification (\@ref(fig:figdatacenter2) <font color="#FF0000">1</font> step).
-2. Paste the data matrix to the text area (\@ref(fig:figdatacenter2) <font color="#FF0000">2</font> step). 
-3. Remember to click **Save** or **Submit** to finish the saving process (\@ref(fig:figdatacenter2) <font color="#FF0000">3</font> step).
-4. Then your uploaded file would be shown in the file selector (\@ref(fig:figdatacenter2) <font color="#FF0000">4</font> step). One can browse or delete unneeded files.
+1. Input a name for your file for identification (Fig \@ref(fig:figdatacenter2) <font color="#FF0000">1</font> step).
+2. Paste the data matrix to the text area (Fig \@ref(fig:figdatacenter2) <font color="#FF0000">2</font> step). 
+3. Remember to click **Save** or **Submit** to finish the saving process (Fig \@ref(fig:figdatacenter2) <font color="#FF0000">3</font> step).
+4. Then your uploaded file would be shown in the file selector (Fig \@ref(fig:figdatacenter2) <font color="#FF0000">4</font> step). One can browse or delete unneeded files.
 
 
 ```{r figdatacenter2, fig.cap="Paste your files."}
@@ -30,4 +30,9 @@ knitr::include_graphics("image/Datacenter1.png")
 
 
 ## Example files
+
+* List of differentially expressed genes: [DE_gene_file.txt](data/DE_gene_file.txt)
+* Gene enrichment results: [Gene_enrichment.txt](data/Gene_enrichment.txt)
+* List of high abundance OTUs in each group: [High_abundance_OTU.txt](data/High_abundance_OTU.txt)
+
 
