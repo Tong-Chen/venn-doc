@@ -15,7 +15,7 @@ output <- opts_knit$get("rmarkdown.pandoc.to")
 output <- "html"
 html = FALSE
 latex = FALSE
-opts_chunk$set(echo = TRUE, out.width="100%", fig.align="center", fig.show="hold", warning=FALSE, message=FALSE)
+opts_chunk$set(echo = FALSE, out.width="100%", fig.align="center", fig.show="hold", warning=FALSE, message=FALSE)
 if (output=="html") {
 	html = TRUE
 }

@@ -4,7 +4,7 @@ author:
 - "Chen Tong"
 - "http://www.ehbio.com/test/venn"
 - "chent@nrc.ac.cn"
-date: "2021-04-20"
+date: "2021-04-21"
 documentclass: article
 site: bookdown::bookdown_site
 ---
@@ -39,11 +39,6 @@ This type of data could be easily generated using Excel or other text-editors wi
 
 Another advantage of this specified format is that it is both human and machine readable, and could be saved for repeatable usages. Based on the unified input format, it is feasible to generate and compare different visualization ways during the data exploring stage and result showing stage. Leaving out of the trouble of file format changing for separate tools, which is essential and not so trivial for researchers who could not program.  
 
-
-```r
-knitr::include_graphics("image/Fig1.png")
-```
-
 <div class="figure" style="text-align: center">
 <img src="image/Fig1.png" alt="Illustration of input data formats. A. The general example of two-column data matrix. B, C, and D represent specified examples for gene sets, OTUs sets and pathway sets respectively. E. Pasting elements for each set separately. F. Typing counts for each intersection. G. Binary matrix format. " width="100%" />
 <p class="caption">(\#fig:fig1)Illustration of input data formats. A. The general example of two-column data matrix. B, C, and D represent specified examples for gene sets, OTUs sets and pathway sets respectively. E. Pasting elements for each set separately. F. Typing counts for each intersection. G. Binary matrix format. </p>
@@ -73,11 +68,6 @@ Besides, the classical input formats for each tool were also preserved for meeti
 4. Remember to click **Save** or **Submit** to finish the uploading process (\@ref(fig:figdatacenter1) <font color="#FF0000">4</font> step).
 5. Then your uploaded file would be shown in the file selector (\@ref(fig:figdatacenter1) <font color="#FF0000">5</font> step). One can browse or delete unneeded files.
 
-
-```r
-knitr::include_graphics("image/Datacenter1.png")
-```
-
 <div class="figure" style="text-align: center">
 <img src="image/Datacenter1.png" alt="Upload your files." width="100%" />
 <p class="caption">(\#fig:figdatacenter1)Upload your files.</p>
@@ -91,11 +81,6 @@ knitr::include_graphics("image/Datacenter1.png")
 3. Remember to click **Save** or **Submit** to finish the saving process (\@ref(fig:figdatacenter2) <font color="#FF0000">3</font> step).
 4. Then your uploaded file would be shown in the file selector (\@ref(fig:figdatacenter2) <font color="#FF0000">4</font> step). One can browse or delete unneeded files.
 
-
-
-```r
-knitr::include_graphics("image/Datacenter1.png")
-```
 
 <div class="figure" style="text-align: center">
 <img src="image/Datacenter1.png" alt="Paste your files." width="100%" />
