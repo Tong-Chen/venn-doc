@@ -78,14 +78,14 @@
 <li class="chapter" data-level="2.2" data-path="upload-files-in-data-center.html"><a href="upload-files-in-data-center.html#paste-your-data-here"><i class="fa fa-check"></i><b>2.2</b> Paste your data here</a></li>
 <li class="chapter" data-level="2.3" data-path="upload-files-in-data-center.html"><a href="upload-files-in-data-center.html#example-files"><i class="fa fa-check"></i><b>2.3</b> Example files</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>3</b> Overview</a><ul>
-<li class="chapter" data-level="3.1" data-path="overview.html"><a href="overview.html#many-in-one-venn-diagram-platform"><i class="fa fa-check"></i><b>3.1</b> Many-in-one venn diagram platform</a></li>
-<li class="chapter" data-level="3.2" data-path="overview.html"><a href="overview.html#implementation"><i class="fa fa-check"></i><b>3.2</b> Implementation</a></li>
-<li class="chapter" data-level="3.3" data-path="overview.html"><a href="overview.html#the-unified-input-format-of-data-matrix"><i class="fa fa-check"></i><b>3.3</b> The unified input format of data matrix</a></li>
-<li class="chapter" data-level="3.4" data-path="overview.html"><a href="overview.html#interactive-venn-diagrams"><i class="fa fa-check"></i><b>3.4</b> Interactive venn diagrams</a></li>
-<li class="chapter" data-level="3.5" data-path="overview.html"><a href="overview.html#venn-diagram-like-plots-euler-diagram-plot-upset-view-plot-flower-plot"><i class="fa fa-check"></i><b>3.5</b> Venn diagram like plots: Euler diagram plot, Upset view plot, Flower plot</a></li>
-<li class="chapter" data-level="3.6" data-path="overview.html"><a href="overview.html#venn-network-exploring-intersections"><i class="fa fa-check"></i><b>3.6</b> Venn network exploring intersections</a></li>
-<li class="chapter" data-level="3.7" data-path="overview.html"><a href="overview.html#tools-for-estimating-sets-similarity-and-calculating-sets-intersections"><i class="fa fa-check"></i><b>3.7</b> Tools for estimating sets similarity and calculating sets intersections</a></li>
+<li class="chapter" data-level="3" data-path="function-description.html"><a href="function-description.html"><i class="fa fa-check"></i><b>3</b> Function description</a><ul>
+<li class="chapter" data-level="3.1" data-path="function-description.html"><a href="function-description.html#many-in-one-venn-diagram-platform"><i class="fa fa-check"></i><b>3.1</b> Many-in-one venn diagram platform</a></li>
+<li class="chapter" data-level="3.2" data-path="function-description.html"><a href="function-description.html#implementation"><i class="fa fa-check"></i><b>3.2</b> Implementation</a></li>
+<li class="chapter" data-level="3.3" data-path="function-description.html"><a href="function-description.html#the-unified-input-format-of-data-matrix"><i class="fa fa-check"></i><b>3.3</b> The unified input format of data matrix</a></li>
+<li class="chapter" data-level="3.4" data-path="function-description.html"><a href="function-description.html#interactive-venn-diagrams"><i class="fa fa-check"></i><b>3.4</b> Interactive venn diagrams</a></li>
+<li class="chapter" data-level="3.5" data-path="function-description.html"><a href="function-description.html#venn-diagram-like-plots-euler-diagram-plot-upset-view-plot-flower-plot"><i class="fa fa-check"></i><b>3.5</b> Venn diagram like plots: Euler diagram plot, Upset view plot, Flower plot</a></li>
+<li class="chapter" data-level="3.6" data-path="function-description.html"><a href="function-description.html#venn-network-exploring-intersections"><i class="fa fa-check"></i><b>3.6</b> Venn network exploring intersections</a></li>
+<li class="chapter" data-level="3.7" data-path="function-description.html"><a href="function-description.html#tools-for-estimating-sets-similarity-and-calculating-sets-intersections"><i class="fa fa-check"></i><b>3.7</b> Tools for estimating sets similarity and calculating sets intersections</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="mailto:chentong_biology@163.com" target="blank">chentong_biology@163.com</a></li>
@@ -114,7 +114,7 @@
 <p>In EVenn, we unified the input data in one simple format for all tools. It is a two-column regular matrix with</p>
 <ol style="list-style-type: decimal">
 <li>the <code>first</code> column containing elements by rows</li>
-<li>and the <code>second</code> column specifies the set each item belongs to, so we named it as <strong>two-column mode</strong> (<a href="input-file-format.html#fig:fig1">1.1</a> A-D).</li>
+<li>and the <code>second</code> column specifies the set each item belongs to, so we named it as <strong>two-column mode</strong> (Fig <a href="input-file-format.html#fig:fig1">1.1</a> A-D).</li>
 <li>If one item belongs to several sets, it may appear in several rows.</li>
 <li>The order of rows does not matter.</li>
 <li>The order of columns matters at least for interactive venn diagrams.</li>
@@ -129,9 +129,9 @@ Figure 1.1: Illustration of input data formats. A. The general example of two-co
 </div>
 <p>Besides, the classical input formats for each tool were also preserved for meeting various requirements. For example:</p>
 <ol style="list-style-type: decimal">
-<li>Pasting elements for each set separately and naming each set on the fly for interactive venn diagram (<a href="input-file-format.html#fig:fig1">1.1</a> E).</li>
-<li>Input the counts of items of each intersections instead of related elements to draw interactive venn diagrams and euler diagrams (<a href="input-file-format.html#fig:fig1">1.1</a> F). This is useful for counting data such as cell immunofluorescence experiments how many cells are stained as red, how many cells are stained as green, how many cells have merged color of blue.</li>
-<li>UpSet also supports a binary matrix for illustrating elements existence (<a href="input-file-format.html#fig:fig1">1.1</a> G). In this format, the first line is the header line containing names of all sets. Each row represents one element. Each column represents each set. Each row represents one element. A value of non-zero representing the corresponding element belongs to the corresponding set.</li>
+<li>Pasting elements for each set separately and naming each set on the fly for interactive venn diagram (Fig <a href="input-file-format.html#fig:fig1">1.1</a> E).</li>
+<li>Input the counts of items of each intersections instead of related elements to draw interactive venn diagrams and euler diagrams (Fig <a href="input-file-format.html#fig:fig1">1.1</a> F). This is useful for counting data such as cell immunofluorescence experiments how many cells are stained as red, how many cells are stained as green, how many cells have merged color of blue.</li>
+<li>UpSet also supports a binary matrix for illustrating elements existence (Fig <a href="input-file-format.html#fig:fig1">1.1</a> G). In this format, the first line is the header line containing names of all sets. Each row represents one element. Each column represents each set. Each row represents one element. A value of non-zero representing the corresponding element belongs to the corresponding set.</li>
 </ol>
 
 </div>

@@ -30,7 +30,7 @@ we construct an on-line tool called EVenn to generate venn diagrams (classical a
 In EVenn, we unified the input data in one simple format for all tools. It is a two-column regular matrix with 
 
 1. the `first` column containing elements by rows 
-2. and the `second` column specifies the set each item belongs to, so we named it as **two-column mode** (\@ref(fig:fig1) A-D). 
+2. and the `second` column specifies the set each item belongs to, so we named it as **two-column mode** (Fig \@ref(fig:fig1) A-D). 
 3. If one item belongs to several sets, it may appear in several rows. 
 4. The order of rows does not matter. 
 5. The order of columns matters at least for interactive venn diagrams. 
@@ -46,9 +46,9 @@ Another advantage of this specified format is that it is both human and machine 
 
 Besides, the classical input formats for each tool were also preserved for meeting various requirements. For example:
 
-1. Pasting elements for each set separately and naming each set on the fly for interactive venn diagram (\@ref(fig:fig1) E).
-2. Input the counts of items of each intersections instead of related elements to draw interactive venn diagrams and euler diagrams (\@ref(fig:fig1) F). This is useful for counting data such as cell immunofluorescence experiments how many cells are stained as red, how many cells are stained as green, how many cells have merged color of blue. 
-3. UpSet also supports a binary matrix for illustrating elements existence  (\@ref(fig:fig1) G). In this format, the first line is the header line containing names of all sets. Each row represents one element. Each column represents each set. Each row represents one element. A value of non-zero representing the corresponding element belongs to the corresponding set.
+1. Pasting elements for each set separately and naming each set on the fly for interactive venn diagram (Fig \@ref(fig:fig1) E).
+2. Input the counts of items of each intersections instead of related elements to draw interactive venn diagrams and euler diagrams (Fig \@ref(fig:fig1) F). This is useful for counting data such as cell immunofluorescence experiments how many cells are stained as red, how many cells are stained as green, how many cells have merged color of blue. 
+3. UpSet also supports a binary matrix for illustrating elements existence  (Fig \@ref(fig:fig1) G). In this format, the first line is the header line containing names of all sets. Each row represents one element. Each column represents each set. Each row represents one element. A value of non-zero representing the corresponding element belongs to the corresponding set.
 
 
 
@@ -62,11 +62,11 @@ Besides, the classical input formats for each tool were also preserved for meeti
 
 ## Upload a file
 
-1. Drag your file or click to upload your file (\@ref(fig:figdatacenter1) <font color="#FF0000">1</font> step).
-2. Input a name for your file for identification (\@ref(fig:figdatacenter1) <font color="#FF0000">2</font> step).
-3. The content of the uploaded file would be loaded into the text area (\@ref(fig:figdatacenter1) <font color="#FF0000">3</font> step). Users are allowed to browse and revise uploaded data if necessary.
-4. Remember to click **Save** or **Submit** to finish the uploading process (\@ref(fig:figdatacenter1) <font color="#FF0000">4</font> step).
-5. Then your uploaded file would be shown in the file selector (\@ref(fig:figdatacenter1) <font color="#FF0000">5</font> step). One can browse or delete unneeded files.
+1. Drag your file or click to upload your file (Fig \@ref(fig:figdatacenter1) <font color="#FF0000">1</font> step).
+2. Input a name for your file for identification (Fig \@ref(fig:figdatacenter1) <font color="#FF0000">2</font> step).
+3. The content of the uploaded file would be loaded into the text area (Fig \@ref(fig:figdatacenter1) <font color="#FF0000">3</font> step). Users are allowed to browse and revise uploaded data if necessary.
+4. Remember to click **Save** or **Submit** to finish the uploading process (Fig \@ref(fig:figdatacenter1) <font color="#FF0000">4</font> step).
+5. Then your uploaded file would be shown in the file selector (Fig \@ref(fig:figdatacenter1) <font color="#FF0000">5</font> step). One can browse or delete unneeded files.
 
 <div class="figure" style="text-align: center">
 <img src="image/Datacenter1.png" alt="Upload your files." width="100%" />
@@ -76,10 +76,10 @@ Besides, the classical input formats for each tool were also preserved for meeti
 
 ## Paste your data here
 
-1. Input a name for your file for identification (\@ref(fig:figdatacenter2) <font color="#FF0000">1</font> step).
-2. Paste the data matrix to the text area (\@ref(fig:figdatacenter2) <font color="#FF0000">2</font> step). 
-3. Remember to click **Save** or **Submit** to finish the saving process (\@ref(fig:figdatacenter2) <font color="#FF0000">3</font> step).
-4. Then your uploaded file would be shown in the file selector (\@ref(fig:figdatacenter2) <font color="#FF0000">4</font> step). One can browse or delete unneeded files.
+1. Input a name for your file for identification (Fig \@ref(fig:figdatacenter2) <font color="#FF0000">1</font> step).
+2. Paste the data matrix to the text area (Fig \@ref(fig:figdatacenter2) <font color="#FF0000">2</font> step). 
+3. Remember to click **Save** or **Submit** to finish the saving process (Fig \@ref(fig:figdatacenter2) <font color="#FF0000">3</font> step).
+4. Then your uploaded file would be shown in the file selector (Fig \@ref(fig:figdatacenter2) <font color="#FF0000">4</font> step). One can browse or delete unneeded files.
 
 
 <div class="figure" style="text-align: center">
@@ -90,10 +90,15 @@ Besides, the classical input formats for each tool were also preserved for meeti
 
 ## Example files
 
+* List of differentially expressed genes: [DE_gene_file.txt](data/DE_gene_file.txt)
+* Gene enrichment results: [Gene_enrichment.txt](data/Gene_enrichment.txt)
+* List of high abundance OTUs in each group: [High_abundance_OTU.txt](data/High_abundance_OTU.txt)
+
+
 
 <!--chapter:end:02.Datacenter.Rmd-->
 
-# Overview
+# Function description
 
 ## Many-in-one venn diagram platform
 
