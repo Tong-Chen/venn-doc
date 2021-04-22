@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4 Euler diagram | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online</title>
+  <meta name="description" content="4 Euler diagram | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4 Euler diagram | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 Euler diagram | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
+  
+  
+  
+
+<meta name="author" content="Chen Tong" />
+<meta name="author" content="http://www.ehbio.com/test/venn" />
+<meta name="author" content="chent@nrc.ac.cn" />
+
+
+<meta name="date" content="2021-04-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="Interactive-venn-diagram.html"/>
+<link rel="next" href="UpSet.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview of EVenn</a><ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#demo-data-and-animations"><i class="fa fa-check"></i><b>0.1</b> Demo data and animations</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#hints-for-question-mark-symbol"><i class="fa fa-check"></i><b>0.2</b> Hints for question mark symbol</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="input-file-format.html"><a href="input-file-format.html"><i class="fa fa-check"></i><b>1</b> Input file format</a><ul>
+<li class="chapter" data-level="1.1" data-path="input-file-format.html"><a href="input-file-format.html#unified-two-column-matrix"><i class="fa fa-check"></i><b>1.1</b> Unified two-column matrix</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="datacenter-uploading.html"><a href="datacenter-uploading.html"><i class="fa fa-check"></i><b>2</b> Upload files in data center</a><ul>
+<li class="chapter" data-level="2.1" data-path="datacenter-uploading.html"><a href="datacenter-uploading.html#upload-a-file"><i class="fa fa-check"></i><b>2.1</b> Upload a file</a></li>
+<li class="chapter" data-level="2.2" data-path="datacenter-uploading.html"><a href="datacenter-uploading.html#paste-your-data-here"><i class="fa fa-check"></i><b>2.2</b> Paste your data here</a></li>
+<li class="chapter" data-level="2.3" data-path="datacenter-uploading.html"><a href="datacenter-uploading.html#example_file"><i class="fa fa-check"></i><b>2.3</b> Example files</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="Interactive-venn-diagram.html"><a href="Interactive-venn-diagram.html"><i class="fa fa-check"></i><b>3</b> Interactive venn diagram</a><ul>
+<li class="chapter" data-level="3.1" data-path="Interactive-venn-diagram.html"><a href="Interactive-venn-diagram.html#intervennpasting"><i class="fa fa-check"></i><b>3.1</b> Pasting two-column mode data matrix</a></li>
+<li class="chapter" data-level="3.2" data-path="Interactive-venn-diagram.html"><a href="Interactive-venn-diagram.html#vennupload"><i class="fa fa-check"></i><b>3.2</b> Use the uploaded two-column mode data matrix</a></li>
+<li class="chapter" data-level="3.3" data-path="Interactive-venn-diagram.html"><a href="Interactive-venn-diagram.html#venneachset"><i class="fa fa-check"></i><b>3.3</b> Pasting elements of each set</a></li>
+<li class="chapter" data-level="3.4" data-path="Interactive-venn-diagram.html"><a href="Interactive-venn-diagram.html#venninputcount"><i class="fa fa-check"></i><b>3.4</b> Input numbers for each intersection</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="Euler-diagram.html"><a href="Euler-diagram.html"><i class="fa fa-check"></i><b>4</b> Euler diagram</a><ul>
+<li class="chapter" data-level="4.1" data-path="Euler-diagram.html"><a href="Euler-diagram.html#eulertwotypeinput"><i class="fa fa-check"></i><b>4.1</b> Two types of input ways</a></li>
+<li class="chapter" data-level="4.2" data-path="Euler-diagram.html"><a href="Euler-diagram.html#eulerpasting"><i class="fa fa-check"></i><b>4.2</b> Pasting two-column mode data matrix</a></li>
+<li class="chapter" data-level="4.3" data-path="Euler-diagram.html"><a href="Euler-diagram.html#additional-style-parameters"><i class="fa fa-check"></i><b>4.3</b> Additional style parameters</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="UpSet.html"><a href="UpSet.html"><i class="fa fa-check"></i><b>5</b> UpSet</a><ul>
+<li class="chapter" data-level="5.1" data-path="UpSet.html"><a href="UpSet.html#upsettwotypeinput"><i class="fa fa-check"></i><b>5.1</b> Two types of input ways</a></li>
+<li class="chapter" data-level="5.2" data-path="UpSet.html"><a href="UpSet.html#upsetpasting"><i class="fa fa-check"></i><b>5.2</b> Pasting two-column mode data matrix</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="function-description.html"><a href="function-description.html"><i class="fa fa-check"></i><b>6</b> Function description</a><ul>
+<li class="chapter" data-level="6.1" data-path="function-description.html"><a href="function-description.html#many-in-one-venn-diagram-platform"><i class="fa fa-check"></i><b>6.1</b> Many-in-one venn diagram platform</a></li>
+<li class="chapter" data-level="6.2" data-path="function-description.html"><a href="function-description.html#implementation"><i class="fa fa-check"></i><b>6.2</b> Implementation</a></li>
+<li class="chapter" data-level="6.3" data-path="function-description.html"><a href="function-description.html#the-unified-input-format-of-data-matrix"><i class="fa fa-check"></i><b>6.3</b> The unified input format of data matrix</a></li>
+<li class="chapter" data-level="6.4" data-path="function-description.html"><a href="function-description.html#interactive-venn-diagrams"><i class="fa fa-check"></i><b>6.4</b> Interactive venn diagrams</a></li>
+<li class="chapter" data-level="6.5" data-path="function-description.html"><a href="function-description.html#venn-diagram-like-plots-euler-diagram-plot-upset-view-plot-flower-plot"><i class="fa fa-check"></i><b>6.5</b> Venn diagram like plots: Euler diagram plot, Upset view plot, Flower plot</a></li>
+<li class="chapter" data-level="6.6" data-path="function-description.html"><a href="function-description.html#venn-network-exploring-intersections"><i class="fa fa-check"></i><b>6.6</b> Venn network exploring intersections</a></li>
+<li class="chapter" data-level="6.7" data-path="function-description.html"><a href="function-description.html#tools-for-estimating-sets-similarity-and-calculating-sets-intersections"><i class="fa fa-check"></i><b>6.7</b> Tools for estimating sets similarity and calculating sets intersections</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="mailto:chentong_biology@163.com" target="blank">chentong_biology@163.com</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="Euler_diagram" class="section level1">
+<h1><span class="header-section-number">4</span> Euler diagram</h1>
+<p>Euler diagram plots do not display empty intersection regions when possible, giving more concrete and accuracy visualization. Theoretically, it could have better visualization effects for more sets than Venn diagrams. And it could clearly show the fully-containing-relationships among 2 or several sets (Fig @ref(fig:Euler_diagrampng)). In EVenn, Euler diagram generates area-proportional diagrams, in which the sizes of intersection areas positively correlated with number of intersection elements. This gives more perceptual intuition than only showing numbers.</p>
+<div class="figure" style="text-align: center">
+<img src="image/Euler_diagram.png" alt="Illustration of fully contained sets using the Euler diagram." width="100%" />
+<p class="caption">
+(#fig:Euler_diagrampng)Illustration of fully contained sets using the Euler diagram.
+</p>
+</div>
+<div id="eulertwotypeinput" class="section level2">
+<h2><span class="header-section-number">4.1</span> Two types of input ways</h2>
+<p>Euler diagram supports two types of input. One is the two-column mode format matrix as we described above (Fig @ref(fig:fig1 A)).</p>
+<p>The other is a count matrix also with two columns (Fig @ref(fig:fig1 F)). The first line would be treated as the header line. The first column containing intersection parts of all sets by rows and the second column containing the number of elements in each intersection part. The <code>&amp;</code> symbol in the first column represents intersecting. The column separator should be one <code>TAB</code>.</p>
+</div>
+<div id="eulerpasting" class="section level2">
+<h2><span class="header-section-number">4.2</span> Pasting two-column mode data matrix</h2>
+<p>Here we use an animation showing the simple steps of generating the Euler diagram with pasted two-column matrix (Fig <a href="Euler-diagram.html#fig:eulerdiagrampaste">4.1</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:eulerdiagrampaste"></span>
+<img src="image/eulerdiagrampaste.gif" alt="Animation illustrating the steps of generating Euler diagrams with pasted data matrix." width="100%" />
+<p class="caption">
+Figure 4.1: Animation illustrating the steps of generating Euler diagrams with pasted data matrix.
+</p>
+</div>
+<p>We split these steps separately.</p>
+<p>First, users select the type of input format. Second, data matrix could be pasted to the text-area or selected from uploaded files. Third, two essential parameters would be filled in the option to set the information contained in each column. Users are allowed to change the default options if they have different column orders. Check the hints (holding the cursor on the question mark symbol) along each parameter for details. Forth, layout and color styles could be changed as required or leaved out for default. There are two mutual exclusion ways to set colors, setting color for each set or selecting one color vector to color all sets. In each way, the number of color is not needed to be the same as number of sets. The underlying program will try the best to deal with color assignments. Fifth, the width and height of output picture could be modified. Sixth, clicking submit button to get the result in PNG format showing below (save by right clicking on the picture). The result picture could also be downloaded in PDF format by clicking Download PDF button.</p>
+<ol style="list-style-type: decimal">
+<li>Select one and only one data format (Fig @ref(fig:Euler_step1) <font color="#FF0000">1</font> and <font color="#FF0000">1</font> radio button). Supposing we select <code>Two-column mode matrix</code>.</li>
+<li>Paste your data matrix in two-column mode to the text-area (Fig @ref(fig:Euler_step1) <font color="#FF0000">3</font>) or select one uploaded file (Fig @ref(fig:Euler_step1) <font color="#FF0000">4</font>) (See section <a href="datacenter-uploading.html#datacenter_uploading">2</a> for data uploading.).</li>
+<li>We assume the <code>first</code> column contains <code>elements</code> and the <code>second</code> column contains <code>sets</code> name and will automatically get the names of each column to fill in (Fig @ref(fig:Euler_step1) <font color="#FF0000">5</font> and <font color="#FF0000">6</font>). If your data matrix <strong>does not</strong> follow this assumption, one are allowed to change values of these two drop-down selection boxes.</li>
+<li>Click ‘Submit’ (Fig @ref(fig:Euler_step1) <font color="#FF0000">7</font>) and the result would be shown in ‘Plot area’ ((Fig @ref(fig:Euler_step1) <font color="#FF0000">8</font>).</li>
+</ol>
+<div class="figure" style="text-align: center">
+<img src="image/Euler_step1.png" alt="Displaying the steps for generating Euler Venn diagrams with pasted data matrix in two-column mode." width="100%" />
+<p class="caption">
+(#fig:Euler_step1)Displaying the steps for generating Euler Venn diagrams with pasted data matrix in two-column mode.
+</p>
+</div>
+</div>
+<div id="additional-style-parameters" class="section level2">
+<h2><span class="header-section-number">4.3</span> Additional style parameters</h2>
+<p>Here lists more style parameters for customized usages.</p>
+<div class="figure" style="text-align: center">
+<img src="image/Euler_style.png" alt="Lists of more parameters. Hovering over the question mark to see detail information." width="100%" />
+<p class="caption">
+(#fig:Euler_style.png)Lists of more parameters. Hovering over the question mark to see detail information.
+</p>
+</div>
+<p>Most parameters could be selected very easily. Here we only explain the color setting parameters.</p>
+<p>Here we supplied two ways to defined colors: <code>Manual color for each set</code> and <code>Manual color vector (color set)</code>.</p>
+<ul>
+<li><code>Manual color for each set</code>: Set the color of each set. Remember to click <strong>OK</strong> when color is designated in color pickers (Fig @ref(fig:color_set) and Fig <a href="Euler-diagram.html#fig:ColorPicker">4.2</a>). This parameter is <strong>mutual exclusion</strong> with <code>Manual color vector (color set)</code> parameter. Please first clear values of <code>Manual color vector (color set)</code> to make this parameter able. If you want to assign color for each set, same number of colors should be picked. If the number of picked colors less than number of sets, the program would generate intermediate colors to make they equal.</li>
+<li><code>Manual color vector (color set)</code>: Select the color vector for all sets. This parameter is mutual exclusion with <code>Manual color for each set</code> parameter. Please first clear values of <code>Manual color for each set</code> parameter to make this parameter able.</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="image/color_set.png" alt="The way to set colors manually." width="100%" />
+<p class="caption">
+(#fig:color_set)The way to set colors manually.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:ColorPicker"></span>
+<img src="image/ColorPicker.gif" alt="An animation showing adding, picking, removing, clearing colors." width="100%" />
+<p class="caption">
+Figure 4.2: An animation showing adding, picking, removing, clearing colors.
+</p>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="Interactive-venn-diagram.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="UpSet.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["EVennDoc.pdf"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

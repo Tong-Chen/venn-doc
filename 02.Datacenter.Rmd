@@ -1,4 +1,4 @@
-# Upload files in data center
+# Upload files in data center {#datacenter_uploading}
 
 *Attention*: The files would not be uploaded to our server in this step. They only exist in a local region in your web browser. These uploaded files would be lost after the web browser is closed. Also, one could not see these uploaded data in other web browsers. 
 
@@ -15,6 +15,11 @@
 knitr::include_graphics("image/Datacenter1.png")
 ```
 
+Here is an animation showing the processes.
+
+```{r uploaddata1gif, fig.cap="Animation showing uploading processes."}
+knitr::include_graphics("image/DragUploadFiles.gif")
+```
 
 ## Paste your data here
 
@@ -28,11 +33,17 @@ knitr::include_graphics("image/Datacenter1.png")
 knitr::include_graphics("image/Datacenter1.png")
 ```
 
+Here is an animation showing the processes.
 
-## Example files
+```{r pasteuploaddata1gif, fig.cap="Animation showing pasting as uploading."}
+knitr::include_graphics("image/PasteUploadFiles.gif")
+```
+
+## Example files {#example_file}
 
 * List of differentially expressed genes: [DE_gene_file.txt](data/DE_gene_file.txt)
 * Gene enrichment results: [Gene_enrichment.txt](data/Gene_enrichment.txt)
 * List of high abundance OTUs in each group: [High_abundance_OTU.txt](data/High_abundance_OTU.txt)
+* List of high abundance taxonomy for many groups: [taxonomy_highabundance_manysets.txt](data/taxonomy_highabundance_manysets.txt)
 
 
