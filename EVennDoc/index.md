@@ -4,10 +4,11 @@ author:
 - "Chen Tong"
 - "http://www.ehbio.com/test/venn"
 - "chent@nrc.ac.cn"
-date: "2021-04-21"
+date: "2021-04-22"
 documentclass: article
 site: bookdown::bookdown_site
 ---
+
 
 
 
@@ -16,6 +17,22 @@ site: bookdown::bookdown_site
 
 we construct an on-line tool called EVenn to generate venn diagrams (classical and Edwards layout), Euler diagrams (proportional), Flower plot, Upset and Venn network. Specially, we developed one unified data matrix as inputs for all tools. This type of input data could be easily prepared using Excel or other text-editors or simple programs. Once uploaded, the data file could be easily loaded to each tool to generate various displaying. This makes EVenn a more suitable tool for exploratory analysis and to choose the best way to explain and visualize data. In order to compute the significance of the overlap between two groups of elements which could be genes or OTUs, random sample test and Jaccard similarity test were applied. The tool Venn calculator could generate the counts and detailed elements for each non-empty intersection for datasets with any number of groups. The results could be used for downstream selection and also could be used as input for data visualization using EVenn. Evenn is available at http://www.ehbio.com/test/venn/.
 
+<img src="image/Overviewvenn.png" width="100%" style="display: block; margin: auto;" />
+
+## Demo data and animations
+
+Each tool contains at least one copy of demo data for beginners. Normally onle `one click on the submit button` is needed to generate the demo result.
+
+Pictures and animations illustrating the usages of every tools step by step are recorded in following sections. Some example data are also listed in the second section - [Example files](#example_file).
+
+## Hints for question mark symbol
+
+This may be a common sense that question mark symbol (`?`) hides help information. 
+
+<div class="figure" style="text-align: center">
+<img src="image/questionMark.png" alt="Hovering the mouse cursor on any question mark symbol to see help or description information." width="100%" />
+<p class="caption">(\#fig:questionMark)Hovering the mouse cursor on any question mark symbol to see help or description information.</p>
+</div>
 
 
 
@@ -55,7 +72,7 @@ Besides, the classical input formats for each tool were also preserved for meeti
 
 <!--chapter:end:01.InputFileFormat.Rmd-->
 
-# Upload files in data center
+# Upload files in data center {#datacenter_uploading}
 
 *Attention*: The files would not be uploaded to our server in this step. They only exist in a local region in your web browser. These uploaded files would be lost after the web browser is closed. Also, one could not see these uploaded data in other web browsers. 
 
@@ -73,6 +90,12 @@ Besides, the classical input formats for each tool were also preserved for meeti
 <p class="caption">(\#fig:figdatacenter1)Upload your files.</p>
 </div>
 
+Here is an animation showing the processes.
+
+<div class="figure" style="text-align: center">
+<img src="image/DragUploadFiles.gif" alt="Animation showing uploading processes." width="100%" />
+<p class="caption">(\#fig:uploaddata1gif)Animation showing uploading processes.</p>
+</div>
 
 ## Paste your data here
 
@@ -87,16 +110,207 @@ Besides, the classical input formats for each tool were also preserved for meeti
 <p class="caption">(\#fig:figdatacenter2)Paste your files.</p>
 </div>
 
+Here is an animation showing the processes.
 
-## Example files
+<div class="figure" style="text-align: center">
+<img src="image/PasteUploadFiles.gif" alt="Animation showing pasting as uploading." width="100%" />
+<p class="caption">(\#fig:pasteuploaddata1gif)Animation showing pasting as uploading.</p>
+</div>
+
+## Example files {#example_file}
 
 * List of differentially expressed genes: [DE_gene_file.txt](data/DE_gene_file.txt)
 * Gene enrichment results: [Gene_enrichment.txt](data/Gene_enrichment.txt)
 * List of high abundance OTUs in each group: [High_abundance_OTU.txt](data/High_abundance_OTU.txt)
+* List of high abundance taxonomy for many groups: [taxonomy_highabundance_manysets.txt](data/taxonomy_highabundance_manysets.txt)
 
 
 
 <!--chapter:end:02.Datacenter.Rmd-->
+
+# Interactive venn diagram {#Interactive_venn_diagram}
+
+This module supports interactive Venn diagram plotting and exploring for at most 6 sets. Through clicking figures in generated plots, one could easily get elements lists for each intersection part. This would facilitate screening candidate elements like genes or OTUs meeting specified intersection patterns. 
+
+Besides, it has several functions like switching between standard *Venn layout* and *Edwards-Venn layout*, switch on and off different lists for comparing. 
+
+Another useful improvement compared with Jvenn is that one can reorder each set to get better visualization by simple dragging of input text-areas. This function is especially useful when one wants to delete one or several sets, no need of re-input for already existed sets (Fig \@ref(fig:InteractiveVennDiagramoupload). 
+
+There are also parameters for changing font sizes, font families, sets colors and other displaying attributes. 
+## Three types of input ways
+
+Three types of input ways are supported for more feasible usages, uploading or pasting all data together using two-column formats (Two-column mode, which is the default) ((Fig \@ref(fig:fig1 A)) and Fig \@ref(fig:interactiveVennInit) <font color="#FF0000">1</font>), directly pasting elements of each set (Input elements) ((Fig \@ref(fig:fig1 E)) and Fig \@ref(fig:interactiveVennInit) <font color="#FF0000">2</font>), typing in counts of each intersections (Input numbers) ((Fig \@ref(fig:fig1 F)) and Fig \@ref(fig:interactiveVennInit) <font color="#FF0000">3</font>). The result picture could be exported in the scalable vector graphics (SVG) format which could be converted to high-resolution images or combined with other pictures for publication usages. Elements lists for each intersection could be downloaded in table format.
+
+<div class="figure" style="text-align: center">
+<img src="image/interactiveVennInit.png" alt="Three types of input ways." width="100%" />
+<p class="caption">(\#fig:interactiveVennInit)Three types of input ways.</p>
+</div>
+
+
+## Pasting two-column mode data matrix {#intervennpasting}
+
+Here we use an animation showing the simple steps of generating and exploring an interactive Venn diagram with pasted two-column matrix (Fig \@ref(fig:InteractiveVennDiagramopate)).
+
+<div class="figure" style="text-align: center">
+<img src="image/InteractiveVennDiagram.op.gif" alt="Animation illustrating the steps of generating interactive venn diagrams with pasted data matrix." width="100%" />
+<p class="caption">(\#fig:InteractiveVennDiagramopate)Animation illustrating the steps of generating interactive venn diagrams with pasted data matrix.</p>
+</div>
+
+We split these steps separately.
+
+1. Paste your data matrix in two-column mode to the text-area (Fig \@ref(fig:InteractiveVennDiagram1) <font color="#FF0000">1</font> step).
+2. Select which set to be analyzed in order. Unique value of the second column (including the header line if existed) would be saved in the drop-down menu as set names for selection (Fig \@ref(fig:InteractiveVennDiagram1) <font color="#FF0000">2</font> step). After several selection, we could get one Venn diagram showing left-top.
+3. Set order could also be changed by holding on button (Fig \@ref(fig:InteractiveVennDiagram1) <font color="#FF0000">3</font>) and dragging to the target position.
+4. color of each set could be customized separately using the color-picker beside set names (Fig \@ref(fig:InteractiveVennDiagram1) <font color="#FF0000">4</font>).
+5. Global configuration parameters could be switched on by clicking button (Fig \@ref(fig:InteractiveVennDiagram1) <font color="#FF0000">5</font>), including display mode, font family, font size, statistics based on input lists (number of elements for each set), switch button, intersection counts. One could easily check their functions if not clearly described by simple clicking. 
+6. Venn diagrams in *PNG*, *SVG* format and intersection elements in *CSV* lists could be downloaded by clicking button  (Fig \@ref(fig:InteractiveVennDiagram1) <font color="#FF0000">6</font>). In CSV lists, one column represents one type of non-empty intersections and attached elements. 
+7. Click the count number in the Venn diagram would show the elements belonging to this intersection in below text-area with one headline showing elements' belonging. 
+
+
+<div class="figure" style="text-align: center">
+<img src="image/InteractiveVennDiagram1.png" alt="Displaying the steps for generating interactive venn diagrams with pasted data matrix in two-column mode." width="100%" />
+<p class="caption">(\#fig:InteractiveVennDiagram1)Displaying the steps for generating interactive venn diagrams with pasted data matrix in two-column mode.</p>
+</div>
+
+## Use the uploaded two-column mode data matrix {#vennupload}
+
+Here we use an animation showing how to choose the uploaded data matrix (seeing section [2](#datacenter_uploading) for data uploading), selecting sets, removing sets, reordering sets and other operations for 6 sets (Fig \@ref(fig:InteractiveVennDiagramoupload).
+
+<div class="figure" style="text-align: center">
+<img src="image/InteractiveVennDiagram.ou.gif" alt="An animation illustrating the steps of generating interactive venn diagrams with previously uploaded data matrix." width="100%" />
+<p class="caption">(\#fig:InteractiveVennDiagramoupload)An animation illustrating the steps of generating interactive venn diagrams with previously uploaded data matrix.</p>
+</div>
+
+
+## Pasting elements of each set {#venneachset}
+
+Most online Venn diagram tools use this kind of input, pasting elements for each set separately and name each set on the fly.
+
+## Input numbers for each intersection {#venninputcount}
+
+This is sometimes useful for drawing Venn diagrams without elements but only numbers, such as the counting results of cell immunofluorescence experiments: how many cells are stained as <font color="#FF0000">red</font>, how many cells are stained as <font color="#00FF00">green</font>, how many cells have merged color of <font color="#0000FF">blue</font>.
+
+
+<div class="figure" style="text-align: center">
+<img src="image/pastenumbersvenn.gif" alt="Draw Venn diagrams with number input. Only support 2-4 sets." width="100%" />
+<p class="caption">(\#fig:pastenumbersvenngif)Draw Venn diagrams with number input. Only support 2-4 sets.</p>
+</div>
+
+
+
+
+
+
+<!--chapter:end:03.Interactive_venn_diagram.Rmd-->
+
+# Euler diagram {#Euler_diagram}
+
+Euler diagram plots do not display empty intersection regions when possible, giving more concrete and accuracy visualization. Theoretically, it could have better visualization effects for more sets than Venn diagrams. And it could clearly show the fully-containing-relationships among 2 or several sets (Fig \@ref(fig:Euler_diagrampng)). In EVenn, Euler diagram generates area-proportional diagrams, in which the sizes of intersection areas positively correlated with number of intersection elements. This gives more perceptual intuition than only showing numbers.
+
+<div class="figure" style="text-align: center">
+<img src="image/Euler_diagram.png" alt="Illustration of fully contained sets using the Euler diagram." width="100%" />
+<p class="caption">(\#fig:Euler_diagrampng)Illustration of fully contained sets using the Euler diagram.</p>
+</div>
+
+## Two types of input ways {#eulertwotypeinput}
+
+Euler diagram supports two types of input. One is the two-column mode format matrix as we described above (Fig \@ref(fig:fig1 A)). 
+
+The other is a count matrix also with two columns (Fig \@ref(fig:fig1 F)). The first line would be treated as the header line. The first column containing intersection parts of all sets by rows and the second column containing the number of elements in each intersection part. The `&` symbol in the first column represents intersecting. The column separator should be one `TAB`. 
+
+
+
+
+
+## Pasting two-column mode data matrix {#eulerpasting}
+
+Here we use an animation showing the simple steps of generating the Euler diagram with pasted two-column matrix (Fig \@ref(fig:eulerdiagrampaste)).
+
+<div class="figure" style="text-align: center">
+<img src="image/eulerdiagrampaste.gif" alt="Animation illustrating the steps of generating Euler diagrams with pasted data matrix." width="100%" />
+<p class="caption">(\#fig:eulerdiagrampaste)Animation illustrating the steps of generating Euler diagrams with pasted data matrix.</p>
+</div>
+
+We split these steps separately.
+
+First, users select the type of input format. Second, data matrix could be pasted to the text-area or selected from uploaded files. Third, two essential parameters would be filled in the option to set the information contained in each column. Users are allowed to change the default options if they have different column orders. Check the hints (holding the cursor on the question mark symbol) along each parameter for details. Forth, layout and color styles could be changed as required or leaved out for default. There are two mutual exclusion ways to set colors, setting color for each set or selecting one color vector to color all sets. In each way, the number of color is not needed to be the same as number of sets. The underlying program will try the best to deal with color assignments. Fifth, the width and height of output picture could be modified. Sixth, clicking submit button to get the result in PNG format showing below (save by right clicking on the picture). The result picture could also be downloaded in PDF format by clicking Download PDF button. 
+
+1. Select one and only one data format  (Fig \@ref(fig:Euler_step1) <font color="#FF0000">1</font> and <font color="#FF0000">1</font> radio button). Supposing we select `Two-column mode matrix`.
+2. Paste your data matrix in two-column mode to the text-area (Fig \@ref(fig:Euler_step1) <font color="#FF0000">3</font>) or select one uploaded file (Fig \@ref(fig:Euler_step1) <font color="#FF0000">4</font>) (See section [2](#datacenter_uploading) for data uploading.).
+3. We assume the `first` column contains `elements` and the `second` column contains `sets` name and will automatically get the names of each column to fill in (Fig \@ref(fig:Euler_step1) <font color="#FF0000">5</font> and  <font color="#FF0000">6</font>). If your data matrix **does not** follow this assumption, one are allowed to change values of these two drop-down selection boxes.
+4. Click 'Submit' (Fig \@ref(fig:Euler_step1) <font color="#FF0000">7</font>) and the result would be shown in 'Plot area' ((Fig \@ref(fig:Euler_step1) <font color="#FF0000">8</font>). 
+
+
+<div class="figure" style="text-align: center">
+<img src="image/Euler_step1.png" alt="Displaying the steps for generating Euler Venn diagrams with pasted data matrix in two-column mode." width="100%" />
+<p class="caption">(\#fig:Euler_step1)Displaying the steps for generating Euler Venn diagrams with pasted data matrix in two-column mode.</p>
+</div>
+
+## Additional style parameters
+
+Here lists more style parameters for customized usages.
+
+<div class="figure" style="text-align: center">
+<img src="image/Euler_style.png" alt="Lists of more parameters. Hovering over the question mark to see detail information." width="100%" />
+<p class="caption">(\#fig:Euler_style.png)Lists of more parameters. Hovering over the question mark to see detail information.</p>
+</div>
+
+Most parameters could be selected very easily. Here we only explain the color setting parameters.
+
+Here we supplied two ways to defined colors: `Manual color for each set` and `Manual color vector (color set)`.
+
+* `Manual color for each set`: Set the color of each set. Remember to click **OK** when color is designated in color pickers (Fig \@ref(fig:color_set) and Fig \@ref(fig:ColorPicker)). This parameter is **mutual exclusion** with `Manual color vector (color set)` parameter. Please first clear values of `Manual color vector (color set)` to make this parameter able. If you want to assign color for each set, same number of colors should be picked. If the number of picked colors less than number of sets, the program would generate intermediate colors to make they equal.
+* `Manual color vector (color set)`: Select the color vector for all sets. This parameter is mutual exclusion with `Manual color for each set` parameter. Please first clear values of `Manual color for each set` parameter to make this parameter able. 
+
+
+<div class="figure" style="text-align: center">
+<img src="image/color_set.png" alt="The way to set colors manually." width="100%" />
+<p class="caption">(\#fig:color_set)The way to set colors manually.</p>
+</div>
+
+<div class="figure" style="text-align: center">
+<img src="image/ColorPicker.gif" alt="An animation showing adding, picking, removing, clearing colors." width="100%" />
+<p class="caption">(\#fig:ColorPicker)An animation showing adding, picking, removing, clearing colors.</p>
+</div>
+
+
+<!--chapter:end:04.Eulerdiagram.Rmd-->
+
+# UpSet {#UpSet}
+
+Upset plot is designed as a novel visualization technique for the quantitative analysis of sets and their intersections (Fig \@ref(fig:upset_diagrampng)). It composed three parts, a horizontal bar-plot showing total number of elements of each set, a matrix with connected-dots indicating all types of intersections among sets, a vertical bar-plot representing number of elements of corresponding intersections. The bars are normally ordered by item counts, giving more direct decision of the largest sets and intersections. Intersections which are empty could be selectively hided to save space for visualizing much more sets. 
+
+<div class="figure" style="text-align: center">
+<img src="image/UpSet.png" alt="UpSet diagrams for 5 sets. Horizontal blue bars represent total number of elements of each set. Orange bars represent number of elements of each intersection indicated by connected dots." width="100%" />
+<p class="caption">(\#fig:upset_diagrampng)UpSet diagrams for 5 sets. Horizontal blue bars represent total number of elements of each set. Orange bars represent number of elements of each intersection indicated by connected dots.</p>
+</div>
+
+## Two types of input ways {#upsettwotypeinput}
+
+Euler diagram supports two types of input. One is the two-column mode format matrix as we described above (Fig \@ref(fig:fig1 A)). 
+
+The other is a binary matrix for illustrating elements existence  (Fig \@ref(fig:fig1 G)). In this format, the first line is the header line containing names of all sets. Each row represents one element. Each column represents each set. Each row represents one element. A value of non-zero representing the corresponding element belongs to the corresponding set. 
+
+
+
+
+## Pasting two-column mode data matrix {#upsetpasting}
+
+Here we use an animation showing the simple steps of generating the UpSet with pasted two-column matrix (Fig \@ref(fig:UpSetAnimationgif)).
+
+<div class="figure" style="text-align: center">
+<img src="image/UpSetAnimation.gif" alt="Animation illustrating the steps of generating UpSet plot with pasted data matrix." width="100%" />
+<p class="caption">(\#fig:UpSetAnimationgif)Animation illustrating the steps of generating UpSet plot with pasted data matrix.</p>
+</div>
+
+1. First, data matrix could be pasted to the text-area or selected from uploaded files. 
+2. Second, only one essential parameter to specify if the first line would be treated as header line. 
+3. Third, users are allowed to set whether to keep empty intersections. 
+4. Forth, the width and height of output picture could be modified. **Enlarge** this number if the graphic displaying is incomplete.
+5. Fifth, clicking `submit` button to get the result in PNG format showing below (save by right clicking on the picture). The result picture could also be downloaded in `PDF` format by clicking `Download PDF button`.
+
+
+<!--chapter:end:05.UpSet.Rmd-->
 
 # Function description
 
