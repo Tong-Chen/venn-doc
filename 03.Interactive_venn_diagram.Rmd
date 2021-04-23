@@ -4,16 +4,24 @@ This module supports interactive Venn diagram plotting and exploring for at most
 
 Besides, it has several functions like switching between standard *Venn layout* and *Edwards-Venn layout*, switch on and off different lists for comparing. 
 
-Another useful improvement compared with Jvenn is that one can reorder each set to get better visualization by simple dragging of input text-areas. This function is especially useful when one wants to delete one or several sets, no need of re-input for already existed sets (Fig \@ref(fig:InteractiveVennDiagramoupload). 
-
+Another useful improvement compared with Jvenn is that one can reorder each set to get better visualization by simple dragging of input text-areas. This function is especially useful when one wants to delete one or several sets, no need of re-input for already existed sets (Fig \@ref(fig:InteractiveVennDiagramoupload)). 
 There are also parameters for changing font sizes, font families, sets colors and other displaying attributes. 
-## Three types of input ways
 
-Three types of input ways are supported for more feasible usages, uploading or pasting all data together using two-column formats (Two-column mode, which is the default) ((Fig \@ref(fig:fig1 A)) and Fig \@ref(fig:interactiveVennInit) <font color="#FF0000">1</font>), directly pasting elements of each set (Input elements) ((Fig \@ref(fig:fig1 E)) and Fig \@ref(fig:interactiveVennInit) <font color="#FF0000">2</font>), typing in counts of each intersections (Input numbers) ((Fig \@ref(fig:fig1 F)) and Fig \@ref(fig:interactiveVennInit) <font color="#FF0000">3</font>). The result picture could be exported in the scalable vector graphics (SVG) format which could be converted to high-resolution images or combined with other pictures for publication usages. Elements lists for each intersection could be downloaded in table format.
+
+## Three types of input ways {#threetypeinputway}
+
+Three types of input ways are supported for more feasible usages, 
+* uploading or pasting all data together using two-column formats (Two-column mode, which is the default) ((Fig \@ref(fig:fig1) A) and Fig \@ref(fig:interactiveVennInit) <font color="#FF0000">1</font>), 
+* directly pasting elements of each set (Input elements) ((Fig \@ref(fig:fig1) E) and Fig \@ref(fig:interactiveVennInit) <font color="#FF0000">2</font>), 
+* typing in counts of each intersections (Input numbers) ((Fig \@ref(fig:fig1) F) and Fig \@ref(fig:interactiveVennInit) <font color="#FF0000">3</font>). 
 
 ```{r interactiveVennInit, fig.cap="Three types of input ways."}
 knitr::include_graphics("image/interactiveVennInit.png")
 ```
+
+The result picture could be exported in the scalable vector graphics (SVG) format which could be converted to high-resolution images or combined with other pictures for publication usages. Elements lists for each intersection could be downloaded in table format.
+
+
 
 
 ## Pasting two-column mode data matrix {#intervennpasting}
@@ -41,7 +49,7 @@ knitr::include_graphics("image/InteractiveVennDiagram1.png")
 
 ## Use the uploaded two-column mode data matrix {#vennupload}
 
-Here we use an animation showing how to choose the uploaded data matrix (seeing section [2](#datacenter_uploading) for data uploading), selecting sets, removing sets, reordering sets and other operations for 6 sets (Fig \@ref(fig:InteractiveVennDiagramoupload).
+Here we use an animation showing how to choose the uploaded data matrix (seeing section [2](#datacenter_uploading) for data uploading), selecting sets, removing sets, reordering sets and other operations for 6 sets (Fig \@ref(fig:InteractiveVennDiagramoupload)).
 
 ```{r InteractiveVennDiagramoupload, fig.cap="An animation illustrating the steps of generating interactive venn diagrams with previously uploaded data matrix."}
 knitr::include_graphics("image/InteractiveVennDiagram.ou.gif")
@@ -54,7 +62,7 @@ Most online Venn diagram tools use this kind of input, pasting elements for each
 
 ## Input numbers for each intersection {#venninputcount}
 
-This is sometimes useful for drawing Venn diagrams without elements but only numbers, such as the counting results of cell immunofluorescence experiments: how many cells are stained as <font color="#FF0000">red</font>, how many cells are stained as <font color="#00FF00">green</font>, how many cells have merged color of <font color="#0000FF">blue</font>.
+This is sometimes useful for drawing Venn diagrams without elements but only numbers, such as the counting results of cell immunofluorescence experiments: how many cells are stained as <font color="#FF0000">red</font>, how many cells are stained as <font color="#00FF00">green</font>, how many cells have merged color of <font color="#FFFF00">yellow</font>.
 
 
 ```{r pastenumbersvenngif, fig.cap="Draw Venn diagrams with number input. Only support 2-4 sets."}

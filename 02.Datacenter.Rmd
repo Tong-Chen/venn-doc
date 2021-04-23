@@ -3,7 +3,7 @@
 *Attention*: The files would not be uploaded to our server in this step. They only exist in a local region in your web browser. These uploaded files would be lost after the web browser is closed. Also, one could not see these uploaded data in other web browsers. 
 
 
-## Upload a file
+## Upload a file {#uploadafile}
 
 1. Drag your file or click to upload your file (Fig \@ref(fig:figdatacenter1) <font color="#FF0000">1</font> step).
 2. Input a name for your file for identification (Fig \@ref(fig:figdatacenter1) <font color="#FF0000">2</font> step).
@@ -30,7 +30,7 @@ knitr::include_graphics("image/DragUploadFiles.gif")
 
 
 ```{r figdatacenter2, fig.cap="Paste your files."}
-knitr::include_graphics("image/Datacenter1.png")
+knitr::include_graphics("image/Datacenter2.png")
 ```
 
 Here is an animation showing the processes.
@@ -41,9 +41,13 @@ knitr::include_graphics("image/PasteUploadFiles.gif")
 
 ## Example files {#example_file}
 
-* List of differentially expressed genes: [DE_gene_file.txt](data/DE_gene_file.txt)
-* Gene enrichment results: [Gene_enrichment.txt](data/Gene_enrichment.txt)
-* List of high abundance OTUs in each group: [High_abundance_OTU.txt](data/High_abundance_OTU.txt)
-* List of high abundance taxonomy for many groups: [taxonomy_highabundance_manysets.txt](data/taxonomy_highabundance_manysets.txt)
+If you accidentally clicked these files directly, use the `back` button on `left-top` corner of your web browser to return back.
+
+* List of differentially expressed genes: [DE_gene_file.txt](data/DE_gene_file.txt) (*right click to save*)
+* Gene enrichment results: [Gene_enrichment.txt](data/Gene_enrichment.txt) (*right click to save*)
+* List of high abundance OTUs in each group: [High_abundance_OTU.txt](data/High_abundance_OTU.txt) (*right click to save*)
+* List of high abundance taxonomy for many groups: [taxonomy_highabundance_manysets.txt](data/taxonomy_highabundance_manysets.txt) (*right click to save*)
+
+
 
 

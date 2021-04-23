@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>5 UpSet | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online</title>
-  <meta name="description" content="5 UpSet | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
+  <title>1 Input file format | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online</title>
+  <meta name="description" content="1 Input file format | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="5 UpSet | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
+  <meta property="og:title" content="1 Input file format | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="5 UpSet | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
+  <meta name="twitter:title" content="1 Input file format | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
   
   
   
@@ -33,8 +33,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="Euler-diagram.html"/>
-<link rel="next" href="flowerplot.html"/>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="datacenter-uploading.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -147,36 +147,34 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="UpSet" class="section level1">
-<h1><span class="header-section-number">5</span> UpSet</h1>
-<p>Upset plot is designed as a novel visualization technique for the quantitative analysis of sets and their intersections (Fig <a href="UpSet.html#fig:upsetdiagrampng">5.1</a>). It composed three parts, a horizontal bar-plot showing total number of elements of each set, a matrix with connected-dots indicating all types of intersections among sets, a vertical bar-plot representing number of elements of corresponding intersections. The bars are normally ordered by item counts, giving more direct decision of the largest sets and intersections. Intersections which are empty could be selectively hided to save space for visualizing much more sets.</p>
-<div class="figure" style="text-align: center"><span id="fig:upsetdiagrampng"></span>
-<img src="image/UpSet.png" alt="UpSet diagrams for 5 sets. Horizontal blue bars represent total number of elements of each set. Orange bars represent number of elements of each intersection indicated by connected dots." width="100%" />
-<p class="caption">
-Figure 5.1: UpSet diagrams for 5 sets. Horizontal blue bars represent total number of elements of each set. Orange bars represent number of elements of each intersection indicated by connected dots.
-</p>
-</div>
-<p>Currently UpSet (in EVenn) is not supported for data-sets with more than 15 sets.</p>
-<div id="upsettwotypeinput" class="section level2">
-<h2><span class="header-section-number">5.1</span> Two types of input ways</h2>
-<p>Euler diagram supports two types of input. One is the two-column mode format matrix as we described above (Fig <a href="inputfileformat.html#fig:fig1">1.1</a> A).</p>
-<p>The other is a binary matrix for illustrating elements existence (Fig <a href="inputfileformat.html#fig:fig1">1.1</a> G). In this format, the first line is the header line containing names of all sets. Each row represents one element. Each column represents each set. Each row represents one element. A value of non-zero representing the corresponding element belongs to the corresponding set.</p>
-</div>
-<div id="upsetpasting" class="section level2">
-<h2><span class="header-section-number">5.2</span> UpSet plot using two-column mode data matrix</h2>
-<p>Here we use an animation showing the simple steps of generating the UpSet with pasted two-column matrix (Fig <a href="UpSet.html#fig:UpSetAnimationgif">5.2</a>).</p>
-<div class="figure" style="text-align: center"><span id="fig:UpSetAnimationgif"></span>
-<img src="image/UpSetAnimation.gif" alt="Animation illustrating the steps of generating UpSet plot with pasted data matrix." width="100%" />
-<p class="caption">
-Figure 5.2: Animation illustrating the steps of generating UpSet plot with pasted data matrix.
-</p>
-</div>
+<div id="inputfileformat" class="section level1">
+<h1><span class="header-section-number">1</span> Input file format</h1>
+<div id="unifiedforall" class="section level2">
+<h2><span class="header-section-number">1.1</span> The unified two-column matrix for all tools</h2>
+<p>In EVenn, we unified the input data in one simple format for all tools. It is a two-column regular matrix with:</p>
 <ol style="list-style-type: decimal">
-<li>First, data matrix could be pasted to the text-area or selected from uploaded files.</li>
-<li>Second, only one essential parameter to specify if the first line would be treated as header line.</li>
-<li>Third, users are allowed to set whether to keep empty intersections.</li>
-<li>Forth, the width and height of output picture could be modified. <strong>Enlarge</strong> this number if the graphic displaying is incomplete.</li>
-<li>Fifth, clicking <code>Submit</code> button to get the result in PNG format showing below (save by right clicking on the picture). The result picture could also be downloaded in <code>PDF</code> format by clicking <code>Download PDF button</code>.</li>
+<li>The <code>first</code> column containing elements by rows.</li>
+<li>And the <code>second</code> column specifies the set each item belongs to, so we named it as <strong>two-column mode</strong> (Fig <a href="inputfileformat.html#fig:fig1">1.1</a> A-D).</li>
+<li>If one item belongs to several sets, it may appear in several rows.</li>
+<li>The order of rows does not matter.</li>
+<li>The order of columns matters at least for interactive <code>Venn diagrams</code> and <code>Venn networks</code>.</li>
+</ol>
+<p>This type of data could be easily generated using Excel or other text-editors with just ‘copy-paste’ operations. It could also be generated program-ably in any analysis pipeline with addition or changing only few codes.</p>
+<p>Another advantage of this specified format is that it is both human and machine readable, and could be saved for repeatable usages. Based on the unified input format, it is feasible to generate and compare different visualization ways during the data exploring stage and result showing stage. Leaving out of the trouble of file format changing for separate tools, which is essential and not so trivial for researchers who could not program.</p>
+<div class="figure" style="text-align: center"><span id="fig:fig1"></span>
+<img src="image/Fig1.png" alt="Illustration of input data formats. A. The general example of two-column data matrix. B, C, and D represent specified examples for gene sets, OTUs sets and pathway sets respectively. E. Pasting elements for each set separately. F. Typing counts for each intersection. G. Binary matrix format. " width="100%" />
+<p class="caption">
+Figure 1.1: Illustration of input data formats. A. The general example of two-column data matrix. B, C, and D represent specified examples for gene sets, OTUs sets and pathway sets respectively. E. Pasting elements for each set separately. F. Typing counts for each intersection. G. Binary matrix format.
+</p>
+</div>
+</div>
+<div id="specifiedforsome" class="section level2">
+<h2><span class="header-section-number">1.2</span> Specifialized input formats for some tools</h2>
+<p>Besides, the classical input formats for each tool were also preserved for meeting various requirements. For example:</p>
+<ol style="list-style-type: decimal">
+<li>Pasting elements for each set separately and naming each set on the fly for interactive Venn diagram (Fig <a href="inputfileformat.html#fig:fig1">1.1</a> E).</li>
+<li>Input the counts instead of related elements of each intersections to draw interactive Venn diagrams and Euler diagrams (Fig <a href="inputfileformat.html#fig:fig1">1.1</a> F). This is useful for counting data such as cell immunofluorescence experiments how many cells are stained as <font color="#FF0000">red</font>, how many cells are stained as <font color="#00FF00">green</font>, how many cells have merged color of <font color="#FFFF00">yellow</font>.</li>
+<li>UpSet also supports a binary matrix for illustrating elements existence (Fig <a href="inputfileformat.html#fig:fig1">1.1</a> G). In this format, the first line is the header line containing names of all sets. Each row represents one element. Each column represents each set. Each row represents one element. A value of non-zero representing the corresponding element belongs to the corresponding set.</li>
 </ol>
 
 </div>
@@ -186,8 +184,8 @@ Figure 5.2: Animation illustrating the steps of generating UpSet plot with paste
           </div>
         </div>
       </div>
-<a href="Euler-diagram.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="flowerplot.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="datacenter-uploading.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

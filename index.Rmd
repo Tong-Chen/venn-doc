@@ -35,7 +35,7 @@ set.seed(0304)
 
 # Overview of EVenn {-}
 
-we construct an on-line tool called EVenn to generate venn diagrams (classical and Edwards layout), Euler diagrams (proportional), Flower plot, Upset and Venn network. Specially, we developed one unified data matrix as inputs for all tools. This type of input data could be easily prepared using Excel or other text-editors or simple programs. Once uploaded, the data file could be easily loaded to each tool to generate various displaying. This makes EVenn a more suitable tool for exploratory analysis and to choose the best way to explain and visualize data. In order to compute the significance of the overlap between two groups of elements which could be genes or OTUs, random sample test and Jaccard similarity test were applied. The tool Venn calculator could generate the counts and detailed elements for each non-empty intersection for datasets with any number of groups. The results could be used for downstream selection and also could be used as input for data visualization using EVenn. Evenn is available at http://www.ehbio.com/test/venn/.
+[EVenn](http://www.ehbio.com/test/venn/#/) is constructed to generate Venn diagrams (classical and Edwards layout), Euler diagrams (proportional), UpSet, Flower plot and Venn network. Specially, we developed one unified data matrix as inputs for all tools. This type of input data could be easily prepared using Excel or other text-editors or simple programs. Once uploaded, the data file could be easily loaded to each tool to generate various displaying. This makes EVenn a more suitable tool for exploratory analysis and to choose the best way to explain and visualize data. In order to compute the significance of the overlap between two groups of elements which could be genes or OTUs, random sample test and Jaccard similarity test were applied. The tool Venn calculator could generate the counts and detailed elements for each non-empty intersection for datasets with any number of groups. The results could be used for downstream selection and also could be used as input for data visualization using EVenn. Evenn is available at http://www.ehbio.com/test/venn/.
 
 ```{r}
 knitr::include_graphics("image/Overviewvenn.png")
@@ -43,9 +43,11 @@ knitr::include_graphics("image/Overviewvenn.png")
 
 ## Demo data and animations
 
-Each tool contains at least one copy of demo data for beginners. Normally onle `one click on the submit button` is needed to generate the demo result.
+Each tool contains at least one copy of demo data for beginners. Normally only `one click on the Submit button` is needed to generate the demo result.
 
-Pictures and animations illustrating the usages of every tools step by step are recorded in following sections. Some example data are also listed in the second section - [Example files](#example_file).
+Pictures and animations illustrating the usages of every tools step by step are recorded in following sections. `Left arrow key` and `right arrow key` in the keyboard could be used to navigate this document to change sections.
+
+Some example data are also listed in the second section - [Example files](#example_file).
 
 ## Hints for question mark symbol
 
@@ -58,11 +60,15 @@ knitr::include_graphics("image/questionMark.png")
 
 ## Gallary {#gallary} 
 
+### Venn network for DE genes
+
 (ref:VennNetworkGallery1label) Venn network using data <DE_gene_file.txt> in [example data](#example_file).
 
 ```{r VennNetworkGallery1, fig.cap="(ref:VennNetworkGallery1label)"}
 knitr::include_graphics("image/VennNetworkGallery1.png")
 ```
+
+### Venn network for pathway enrichment results
 
 (ref:VennNetworkGalleryP53pathway) Venn network using data <Gene_enrichment.txt> in [example data](#example_file).
 
@@ -70,10 +76,12 @@ knitr::include_graphics("image/VennNetworkGallery1.png")
 knitr::include_graphics("image/VennNetworkGalleryP53pathway.png")
 ```
 
+### Venn network for 12 sets
+
 (ref:Vennnetworkgallary12sets) Venn network using data <taxonomy_highabundance_manysets.txt> in [example data](#example_file).
 
 
-```{r Vennnetworkgallary12sets, fig.cap="(ref:VennNetworkGallery1label)"}
+```{r Vennnetworkgallary12sets, out.width="48%", fig.cap="(ref:VennNetworkGallery1label)"}
 knitr::include_graphics(c("image/Vennnetworkgallary12sets.png",
                           "image/Vennnetworkgallary12setsparameters.png"))
 ```
