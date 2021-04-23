@@ -4,7 +4,7 @@ author:
 - "Chen Tong"
 - "http://www.ehbio.com/test/venn"
 - "chent@nrc.ac.cn"
-date: "2021-04-22"
+date: "2021-04-23"
 documentclass: article
 site: bookdown::bookdown_site
 ---
@@ -33,6 +33,35 @@ This may be a common sense that question mark symbol (`?`) hides help informatio
 <img src="image/questionMark.png" alt="Hovering the mouse cursor on any question mark symbol to see help or description information." width="100%" />
 <p class="caption">(\#fig:questionMark)Hovering the mouse cursor on any question mark symbol to see help or description information.</p>
 </div>
+
+
+## Gallary {#gallary} 
+
+(ref:VennNetworkGallery1label) Venn network using data <DE_gene_file.txt> in [example data](#example_file).
+
+<div class="figure" style="text-align: center">
+<img src="image/VennNetworkGallery1.png" alt="(ref:VennNetworkGallery1label)" width="100%" />
+<p class="caption">(\#fig:VennNetworkGallery1)(ref:VennNetworkGallery1label)</p>
+</div>
+
+(ref:VennNetworkGalleryP53pathway) Venn network using data <Gene_enrichment.txt> in [example data](#example_file).
+
+<div class="figure" style="text-align: center">
+<img src="image/VennNetworkGalleryP53pathway.png" alt="(ref:VennNetworkGallery1label)" width="100%" />
+<p class="caption">(\#fig:VennNetworkGalleryP53pathway)(ref:VennNetworkGallery1label)</p>
+</div>
+
+(ref:Vennnetworkgallary12sets) Venn network using data <taxonomy_highabundance_manysets.txt> in [example data](#example_file).
+
+
+<div class="figure" style="text-align: center">
+<img src="image/Vennnetworkgallary12sets.png" alt="(ref:VennNetworkGallery1label)" width="100%" /><img src="image/Vennnetworkgallary12setsparameters.png" alt="(ref:VennNetworkGallery1label)" width="100%" />
+<p class="caption">(\#fig:Vennnetworkgallary12sets)(ref:VennNetworkGallery1label)</p>
+</div>
+
+
+
+
 
 
 
@@ -233,12 +262,11 @@ Here we use an animation showing the simple steps of generating the Euler diagra
 
 We split these steps separately.
 
-First, users select the type of input format. Second, data matrix could be pasted to the text-area or selected from uploaded files. Third, two essential parameters would be filled in the option to set the information contained in each column. Users are allowed to change the default options if they have different column orders. Check the hints (holding the cursor on the question mark symbol) along each parameter for details. Forth, layout and color styles could be changed as required or leaved out for default. There are two mutual exclusion ways to set colors, setting color for each set or selecting one color vector to color all sets. In each way, the number of color is not needed to be the same as number of sets. The underlying program will try the best to deal with color assignments. Fifth, the width and height of output picture could be modified. Sixth, clicking submit button to get the result in PNG format showing below (save by right clicking on the picture). The result picture could also be downloaded in PDF format by clicking Download PDF button. 
 
 1. Select one and only one data format  (Fig \@ref(fig:Euler_step1) <font color="#FF0000">1</font> and <font color="#FF0000">1</font> radio button). Supposing we select `Two-column mode matrix`.
 2. Paste your data matrix in two-column mode to the text-area (Fig \@ref(fig:Euler_step1) <font color="#FF0000">3</font>) or select one uploaded file (Fig \@ref(fig:Euler_step1) <font color="#FF0000">4</font>) (See section [2](#datacenter_uploading) for data uploading.).
 3. We assume the `first` column contains `elements` and the `second` column contains `sets` name and will automatically get the names of each column to fill in (Fig \@ref(fig:Euler_step1) <font color="#FF0000">5</font> and  <font color="#FF0000">6</font>). If your data matrix **does not** follow this assumption, one are allowed to change values of these two drop-down selection boxes.
-4. Click 'Submit' (Fig \@ref(fig:Euler_step1) <font color="#FF0000">7</font>) and the result would be shown in 'Plot area' ((Fig \@ref(fig:Euler_step1) <font color="#FF0000">8</font>). 
+4. Click 'Submit' (Fig \@ref(fig:Euler_step1) <font color="#FF0000">7</font>) and the result would be shown in 'Plot area' ((Fig \@ref(fig:Euler_step1) <font color="#FF0000">8</font>). The result in PNG format showing below and could be saved by right clicking on the picture). The result picture could also be downloaded in PDF format by clicking `Download PDF` button.
 
 
 <div class="figure" style="text-align: center">
@@ -255,6 +283,10 @@ Here lists more style parameters for customized usages.
 <p class="caption">(\#fig:Euler_style.png)Lists of more parameters. Hovering over the question mark to see detail information.</p>
 </div>
 
+The width and height of output picture could be modified.  **Enlarge** these numbers if the graphic displaying is incomplete.
+
+
+
 Most parameters could be selected very easily. Here we only explain the color setting parameters.
 
 Here we supplied two ways to defined colors: `Manual color for each set` and `Manual color vector (color set)`.
@@ -262,6 +294,7 @@ Here we supplied two ways to defined colors: `Manual color for each set` and `Ma
 * `Manual color for each set`: Set the color of each set. Remember to click **OK** when color is designated in color pickers (Fig \@ref(fig:color_set) and Fig \@ref(fig:ColorPicker)). This parameter is **mutual exclusion** with `Manual color vector (color set)` parameter. Please first clear values of `Manual color vector (color set)` to make this parameter able. If you want to assign color for each set, same number of colors should be picked. If the number of picked colors less than number of sets, the program would generate intermediate colors to make they equal.
 * `Manual color vector (color set)`: Select the color vector for all sets. This parameter is mutual exclusion with `Manual color for each set` parameter. Please first clear values of `Manual color for each set` parameter to make this parameter able. 
 
+**Attention**:  In each way, the number of color is not needed to be the same as number of sets. The underlying program will try the best to deal with color assignments.
 
 <div class="figure" style="text-align: center">
 <img src="image/color_set.png" alt="The way to set colors manually." width="100%" />
@@ -294,7 +327,7 @@ The other is a binary matrix for illustrating elements existence  (Fig \@ref(fig
 
 
 
-## Pasting two-column mode data matrix {#upsetpasting}
+## UpSet plot using two-column mode data matrix {#upsetpasting}
 
 Here we use an animation showing the simple steps of generating the UpSet with pasted two-column matrix (Fig \@ref(fig:UpSetAnimationgif)).
 
@@ -311,6 +344,152 @@ Here we use an animation showing the simple steps of generating the UpSet with p
 
 
 <!--chapter:end:05.UpSet.Rmd-->
+
+# Flower plot {#flowerplot}
+
+For integrated data with more than 10 or 20 sets, neither Venn diagram, Euler diagram or UpSet (when most intersections are not empty) could give easy displaying. Flower plot which shows only common elements shared by all sets and special elements for each set provides another choice (Fig \@ref(fig:flower_diagrampng)). Flower plot would be more useful when displaying commonality or specificity, while other intersection combinations are not so important. There is a trade-off between ease-interpretation and information loss. 
+
+<div class="figure" style="text-align: center">
+<img src="image/Flower.png" alt="Flower diagrams for 12 sets. Number of elememnts shared among all sets are labeled in the center circle. " width="100%" />
+<p class="caption">(\#fig:flower_diagrampng)Flower diagrams for 12 sets. Number of elememnts shared among all sets are labeled in the center circle. </p>
+</div>
+
+## Two-column mode matrxi as input  {#flowerinput}
+
+The two-column mode format matrix (Fig \@ref(fig:fig1 A)) is the required input for Flower plot. 
+
+
+## Flower plot using two-column mode data matrix {#floweanimation}
+
+Here we use an animation showing the simple steps of generating the flower plot with one uploaded two-column matrix (Fig \@ref(fig:flowerAnimationgif)).
+
+<div class="figure" style="text-align: center">
+<img src="image/flowerAnimation.gif" alt="Animation illustrating the steps of generating the flower plot with one uploaded two-column matrix." width="100%" />
+<p class="caption">(\#fig:flowerAnimationgif)Animation illustrating the steps of generating the flower plot with one uploaded two-column matrix.</p>
+</div>
+
+
+1. First, data matrix could be pasted to the text-area or selected from uploaded files. 
+2. Second, We assume the `first` column contains `elements` and the `second` column contains `sets` name and will automatically get the names of each column to fill in. If your data matrix **does not** follow this assumption, one are allowed to change values of these two drop-down selection boxes. Check the hints (holding the cursor on the question mark symbol) along each parameter for details. 
+3. Third, layout and color styles could be changed as required or leaved out for default. Click `Layout and colors` to open/close related parameters.
+4. Forth, the width and height of output picture could be modified (by clicking `Picture attributes`). **Enlarge** this number if the graphic displaying is incomplete.
+5. Fifth, clicking `Submit` button to get the result in PNG format showing below (could be saves by `right clicking on the picture`). The result picture could also be downloaded in PDF format by clicking `Download PDF` button. 
+
+## Color setting for flower plot {#flowercolorpallete}
+
+See Fig \@ref(fig:ColorPicker).
+
+## Fun with flower plot {#flowerfun}
+
+Here shows the effect of switching the options between `Column containing all elements` and `Column containing all sets information`.
+
+<div class="figure" style="text-align: center">
+<img src="image/large.flower.png" alt="Flower diagrams for many sets." width="100%" />
+<p class="caption">(\#fig:flower_diagramfunpng)Flower diagrams for many sets.</p>
+</div>
+
+
+
+<!--chapter:end:06.flower.Rmd-->
+
+# Venn network {#vennnetwork}
+
+Venn network could show both elements and their belonging sets in an interactive network diagram (Fig \@ref(fig:vennnetworkpng)). Each set would be treated as one parent node, each item would be connected to its parent nodes via edges. Elements connected with all sets are shared among them. Interactive venn network is implemented using vis.js with function extensions and simplified steps. 
+
+<div class="figure" style="text-align: center">
+<img src="image/Vennnetwork.png" alt="Venn network for 3 sets. The three light-blue nodes represent sets KO, OE and WT. The purple nodes in the middle are shared among 3 sets. Those nodes connected with two edges are shared by every two sets. The outer nodes with only one connected edges are specially belonging to one set." width="100%" />
+<p class="caption">(\#fig:vennnetworkpng)Venn network for 3 sets. The three light-blue nodes represent sets KO, OE and WT. The purple nodes in the middle are shared among 3 sets. Those nodes connected with two edges are shared by every two sets. The outer nodes with only one connected edges are specially belonging to one set.</p>
+</div>
+
+## Two-column mode matrxi as input  {#venninput}
+
+The two-column mode format matrix (Fig \@ref(fig:fig1 A)) is the required input for Flower plot. 
+
+
+## Venn network using two-column mode data matrix {#vennanimation}
+
+Here we use an animation showing the simple steps of generating the Venn network plot with the default demo data (Fig \@ref(fig:vennnetworkAnimationgif)).
+
+<div class="figure" style="text-align: center">
+<img src="image/vennnetworkAnimation.gif" alt="Animation illustrating the steps of generating the Venn network plot with one uploaded two-column matrix." width="100%" />
+<p class="caption">(\#fig:vennnetworkAnimationgif)Animation illustrating the steps of generating the Venn network plot with one uploaded two-column matrix.</p>
+</div>
+
+
+1. First, data matrix could be pasted to the text-area or selected from uploaded files. Then other parameters are all optional. 
+2. Second,color of each set could be assigned separately using the color picker or leaving out as default.  Each set should have one and only one color assignment.
+3. Third, users are allowed to show all elements (simulating the `Venn diagram`) or show only common elements and specific elements of all sets (simulating the `Flower plot`). 
+4. Forth, clicking `Submit` button to get the network showing below.
+5. Fifth, One initial layout would be first loaded. Then users are suggested to click `Preferred layout`  button (Fig \@ref(fig:Vennnetworkparameters) <font color="#FF0000">2</font>) to get a suitable layout mode after 1-2 minutes animation. This button would usually give the optimized layout
+6. Sixth, click the button ((Fig \@ref(fig:Vennnetworkparameters) <font color="#FF0000">1</font>)) to open the left tool bar to set more parameters. In our mind, the top 2 parameters for network layout is `springLength` and `nodeDistance` ((Fig \@ref(fig:Vennnetworkparameters) <font color="#FF0000">7</font> and <font color="#FF0000">8</font>)). Decreasing the numbers of either of these two parameters would make the network more aggregation. Increasing the numbers of either of these two parameters would make the network more diffuse.
+7. In the end, the picture could be exported in `SVG` (`Export SVG` button) format for publication usages. 
+ 
+<div class="figure" style="text-align: center">
+<img src="image/Vennnetworkparameters.png" alt="List and label some parameters." width="100%" />
+<p class="caption">(\#fig:Vennnetworkparameters)List and label some parameters.</p>
+</div>
+
+ 
+## Parameter description for network layout
+
+More visual and layout parameters are allowed to adjust for more specific situations. 
+
+1. A node would be elected and highlighted by single clicking on it. 
+2. Then its attribute (label, label font-size, size, shape, border width, background color, nodes border color, label color) could be modified by clicking `Edit`-`Edit node` button (Fig \@ref(fig:Vennnetworkparameters) <font color="#FF0000">5</font>). 
+3. New nodes and edges could be added by two buttons: `Add node` and `Add edge` (Fig \@ref(fig:Vennnetworkparameters) <font color="#FF0000">5</font>). 
+4. Multiple nodes could be selected using one of the following three methods. 
+   1. Hold down `CTRL` on the keyboard and click nodes to be selected; 
+   2. Hold down each candidate node for more than one `second` to select multiple nodes; 
+   3. Draw a cursor `rectangle` with the `Right Mouse button` hold down to select multiple nodes. 
+5. When multiple nodes were selected, their attributes (label font-size, size, shape, border width, background color, nodes border color, label color) could be changed in batch using the `Edit X-nodes` (Fig \@ref(fig:Vennnetworkparameters) <font color="#FF0000">3</font>) button. 
+6. Nodes and edges styles could also be changed on ‘nodes’ and ‘edges’ menus in the left-side tool-bar. 
+7. The overall layout could be changed using `hieratical` and `physics` menus in the left-side toolbar (Fig \@ref(fig:Vennnetworkparameters) <font color="#FF0000">6,7,8,9,10</font>).
+8. Additionally, clicking `Cyclization` button (Fig \@ref(fig:Vennnetworkparameters) <font color="#FF0000">4</font>) will make all selected nodes form a circle.  
+
+
+## Color setting for Venn network {#vennnetworkcolorpallete}
+
+Each set should have **one and only one** color assignment. Please see Fig \@ref(fig:ColorPicker) for operation showing.
+
+
+## Venn network showing gene ontology/KEGG enrichment informations {#vennenrichment}
+
+In microbiome analysis, interpretation function impacting of genes with differential abundance among experimental groups is one major goal. Normally genes are associated with multiple gene ontology (GO) annotations or pathways. The using of bar-plot or dot-plot to show GO analysis results though simple but may loss information of GO relationships such as the percentage of genes shared by different categories. Venn network could show both ontologies and their relationships through common connected genes. This is also suitable for transcriptome, genome and other omics-data analysis. 
+
+
+<div class="figure" style="text-align: center">
+<img src="image/Vennnetworkpathway.gif" alt="Venn network showing gene onthlogy enrichment result." width="100%" />
+<p class="caption">(\#fig:Vennnetworkpathwaygif)Venn network showing gene onthlogy enrichment result.</p>
+</div>
+
+<!--chapter:end:07.Vennnetwork.Rmd-->
+
+# Venn estimate {#vennestimate}
+
+Visualization would give qualitative but not quantitative estimation of sets similarity. However, it is usually needed to check the significance level of sets similarity to get more conclusive interpretations. We implied two commonly used methods: random sample test and Jaccard similarity test. 
+
+* Random sample test using random sampling process for 1000 times to check if given overlaps are random or not. 
+* Jaccard similarity test using the Jaccard similarity coefficient -- the ratio of intersection to union for statistical testing of similarity between binary data. 
+
+<div class="figure" style="text-align: center">
+<img src="image/Vennestimate.png" alt="Venn estimate." width="100%" />
+<p class="caption">(\#fig:vennestimatepng)Venn estimate.</p>
+</div>
+
+
+<!--chapter:end:08.Vennestimate.Rmd-->
+
+# Venn calculator {#venncalculator}
+
+There are also scenes that we want to quickly select candidate elements like genes or OTUs for downstream analysis before generating plots. Venn calculator is designed to output elements for intersections for any number of sets in table format for further exploring. Besides, the output could be easily giving to Euler diagram to generate plots without computing again.  
+
+<div class="figure" style="text-align: center">
+<img src="image/Venncalculator.png" alt="Venn calculator." width="100%" />
+<p class="caption">(\#fig:venncalculatorpng)Venn calculator.</p>
+</div>
+
+
+<!--chapter:end:09.Venncalculator.Rmd-->
 
 # Function description
 

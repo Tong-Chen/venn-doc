@@ -15,7 +15,7 @@ The other is a binary matrix for illustrating elements existence  (Fig \@ref(fig
 
 
 
-## Pasting two-column mode data matrix {#upsetpasting}
+## UpSet plot using two-column mode data matrix {#upsetpasting}
 
 Here we use an animation showing the simple steps of generating the UpSet with pasted two-column matrix (Fig \@ref(fig:UpSetAnimationgif)).
 
