@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>6 Flower plot | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online</title>
+  <meta name="description" content="6 Flower plot | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="6 Flower plot | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="6 Flower plot | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
+  
+  
+  
+
+<meta name="author" content="Chen Tong" />
+<meta name="author" content="http://www.ehbio.com/test/venn" />
+<meta name="author" content="chent@nrc.ac.cn" />
+
+
+<meta name="date" content="2021-04-23" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="UpSet.html"/>
+<link rel="next" href="vennnetwork.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview of EVenn</a><ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#demo-data-and-animations"><i class="fa fa-check"></i><b>0.1</b> Demo data and animations</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#hints-for-question-mark-symbol"><i class="fa fa-check"></i><b>0.2</b> Hints for question mark symbol</a></li>
+<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#gallary"><i class="fa fa-check"></i><b>0.3</b> Gallary</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="input-file-format.html"><a href="input-file-format.html"><i class="fa fa-check"></i><b>1</b> Input file format</a><ul>
+<li class="chapter" data-level="1.1" data-path="input-file-format.html"><a href="input-file-format.html#unified-two-column-matrix"><i class="fa fa-check"></i><b>1.1</b> Unified two-column matrix</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="datacenter-uploading.html"><a href="datacenter-uploading.html"><i class="fa fa-check"></i><b>2</b> Upload files in data center</a><ul>
+<li class="chapter" data-level="2.1" data-path="datacenter-uploading.html"><a href="datacenter-uploading.html#upload-a-file"><i class="fa fa-check"></i><b>2.1</b> Upload a file</a></li>
+<li class="chapter" data-level="2.2" data-path="datacenter-uploading.html"><a href="datacenter-uploading.html#paste-your-data-here"><i class="fa fa-check"></i><b>2.2</b> Paste your data here</a></li>
+<li class="chapter" data-level="2.3" data-path="datacenter-uploading.html"><a href="datacenter-uploading.html#example_file"><i class="fa fa-check"></i><b>2.3</b> Example files</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="Interactive-venn-diagram.html"><a href="Interactive-venn-diagram.html"><i class="fa fa-check"></i><b>3</b> Interactive venn diagram</a><ul>
+<li class="chapter" data-level="3.1" data-path="Interactive-venn-diagram.html"><a href="Interactive-venn-diagram.html#intervennpasting"><i class="fa fa-check"></i><b>3.1</b> Pasting two-column mode data matrix</a></li>
+<li class="chapter" data-level="3.2" data-path="Interactive-venn-diagram.html"><a href="Interactive-venn-diagram.html#vennupload"><i class="fa fa-check"></i><b>3.2</b> Use the uploaded two-column mode data matrix</a></li>
+<li class="chapter" data-level="3.3" data-path="Interactive-venn-diagram.html"><a href="Interactive-venn-diagram.html#venneachset"><i class="fa fa-check"></i><b>3.3</b> Pasting elements of each set</a></li>
+<li class="chapter" data-level="3.4" data-path="Interactive-venn-diagram.html"><a href="Interactive-venn-diagram.html#venninputcount"><i class="fa fa-check"></i><b>3.4</b> Input numbers for each intersection</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="Euler-diagram.html"><a href="Euler-diagram.html"><i class="fa fa-check"></i><b>4</b> Euler diagram</a><ul>
+<li class="chapter" data-level="4.1" data-path="Euler-diagram.html"><a href="Euler-diagram.html#eulertwotypeinput"><i class="fa fa-check"></i><b>4.1</b> Two types of input ways</a></li>
+<li class="chapter" data-level="4.2" data-path="Euler-diagram.html"><a href="Euler-diagram.html#eulerpasting"><i class="fa fa-check"></i><b>4.2</b> Pasting two-column mode data matrix</a></li>
+<li class="chapter" data-level="4.3" data-path="Euler-diagram.html"><a href="Euler-diagram.html#additional-style-parameters"><i class="fa fa-check"></i><b>4.3</b> Additional style parameters</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="UpSet.html"><a href="UpSet.html"><i class="fa fa-check"></i><b>5</b> UpSet</a><ul>
+<li class="chapter" data-level="5.1" data-path="UpSet.html"><a href="UpSet.html#upsettwotypeinput"><i class="fa fa-check"></i><b>5.1</b> Two types of input ways</a></li>
+<li class="chapter" data-level="5.2" data-path="UpSet.html"><a href="UpSet.html#upsetpasting"><i class="fa fa-check"></i><b>5.2</b> UpSet plot using two-column mode data matrix</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="flowerplot.html"><a href="flowerplot.html"><i class="fa fa-check"></i><b>6</b> Flower plot</a><ul>
+<li class="chapter" data-level="6.1" data-path="flowerplot.html"><a href="flowerplot.html#flowerinput"><i class="fa fa-check"></i><b>6.1</b> Two-column mode matrxi as input</a></li>
+<li class="chapter" data-level="6.2" data-path="flowerplot.html"><a href="flowerplot.html#floweanimation"><i class="fa fa-check"></i><b>6.2</b> Flower plot using two-column mode data matrix</a></li>
+<li class="chapter" data-level="6.3" data-path="flowerplot.html"><a href="flowerplot.html#flowercolorpallete"><i class="fa fa-check"></i><b>6.3</b> Color setting for flower plot</a></li>
+<li class="chapter" data-level="6.4" data-path="flowerplot.html"><a href="flowerplot.html#flowerfun"><i class="fa fa-check"></i><b>6.4</b> Fun with flower plot</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="vennnetwork.html"><a href="vennnetwork.html"><i class="fa fa-check"></i><b>7</b> Venn network</a><ul>
+<li class="chapter" data-level="7.1" data-path="vennnetwork.html"><a href="vennnetwork.html#venninput"><i class="fa fa-check"></i><b>7.1</b> Two-column mode matrxi as input</a></li>
+<li class="chapter" data-level="7.2" data-path="vennnetwork.html"><a href="vennnetwork.html#vennanimation"><i class="fa fa-check"></i><b>7.2</b> Venn network using two-column mode data matrix</a></li>
+<li class="chapter" data-level="7.3" data-path="vennnetwork.html"><a href="vennnetwork.html#parameter-description-for-network-layout"><i class="fa fa-check"></i><b>7.3</b> Parameter description for network layout</a></li>
+<li class="chapter" data-level="7.4" data-path="vennnetwork.html"><a href="vennnetwork.html#vennnetworkcolorpallete"><i class="fa fa-check"></i><b>7.4</b> Color setting for Venn network</a></li>
+<li class="chapter" data-level="7.5" data-path="vennnetwork.html"><a href="vennnetwork.html#vennenrichment"><i class="fa fa-check"></i><b>7.5</b> Venn network showing gene ontology/KEGG enrichment informations</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="vennestimate.html"><a href="vennestimate.html"><i class="fa fa-check"></i><b>8</b> Venn estimate</a></li>
+<li class="chapter" data-level="9" data-path="venncalculator.html"><a href="venncalculator.html"><i class="fa fa-check"></i><b>9</b> Venn calculator</a></li>
+<li class="chapter" data-level="10" data-path="function-description.html"><a href="function-description.html"><i class="fa fa-check"></i><b>10</b> Function description</a><ul>
+<li class="chapter" data-level="10.1" data-path="function-description.html"><a href="function-description.html#many-in-one-venn-diagram-platform"><i class="fa fa-check"></i><b>10.1</b> Many-in-one venn diagram platform</a></li>
+<li class="chapter" data-level="10.2" data-path="function-description.html"><a href="function-description.html#implementation"><i class="fa fa-check"></i><b>10.2</b> Implementation</a></li>
+<li class="chapter" data-level="10.3" data-path="function-description.html"><a href="function-description.html#the-unified-input-format-of-data-matrix"><i class="fa fa-check"></i><b>10.3</b> The unified input format of data matrix</a></li>
+<li class="chapter" data-level="10.4" data-path="function-description.html"><a href="function-description.html#interactive-venn-diagrams"><i class="fa fa-check"></i><b>10.4</b> Interactive venn diagrams</a></li>
+<li class="chapter" data-level="10.5" data-path="function-description.html"><a href="function-description.html#venn-diagram-like-plots-euler-diagram-plot-upset-view-plot-flower-plot"><i class="fa fa-check"></i><b>10.5</b> Venn diagram like plots: Euler diagram plot, Upset view plot, Flower plot</a></li>
+<li class="chapter" data-level="10.6" data-path="function-description.html"><a href="function-description.html#venn-network-exploring-intersections"><i class="fa fa-check"></i><b>10.6</b> Venn network exploring intersections</a></li>
+<li class="chapter" data-level="10.7" data-path="function-description.html"><a href="function-description.html#tools-for-estimating-sets-similarity-and-calculating-sets-intersections"><i class="fa fa-check"></i><b>10.7</b> Tools for estimating sets similarity and calculating sets intersections</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="mailto:chentong_biology@163.com" target="blank">chentong_biology@163.com</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="flowerplot" class="section level1">
+<h1><span class="header-section-number">6</span> Flower plot</h1>
+<p>For integrated data with more than 10 or 20 sets, neither Venn diagram, Euler diagram or UpSet (when most intersections are not empty) could give easy displaying. Flower plot which shows only common elements shared by all sets and special elements for each set provides another choice (Fig @ref(fig:flower_diagrampng)). Flower plot would be more useful when displaying commonality or specificity, while other intersection combinations are not so important. There is a trade-off between ease-interpretation and information loss.</p>
+<div class="figure" style="text-align: center">
+<img src="image/Flower.png" alt="Flower diagrams for 12 sets. Number of elememnts shared among all sets are labeled in the center circle. " width="100%" />
+<p class="caption">
+(#fig:flower_diagrampng)Flower diagrams for 12 sets. Number of elememnts shared among all sets are labeled in the center circle.
+</p>
+</div>
+<div id="flowerinput" class="section level2">
+<h2><span class="header-section-number">6.1</span> Two-column mode matrxi as input</h2>
+<p>The two-column mode format matrix (Fig @ref(fig:fig1 A)) is the required input for Flower plot.</p>
+</div>
+<div id="floweanimation" class="section level2">
+<h2><span class="header-section-number">6.2</span> Flower plot using two-column mode data matrix</h2>
+<p>Here we use an animation showing the simple steps of generating the flower plot with one uploaded two-column matrix (Fig <a href="flowerplot.html#fig:flowerAnimationgif">6.1</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:flowerAnimationgif"></span>
+<img src="image/flowerAnimation.gif" alt="Animation illustrating the steps of generating the flower plot with one uploaded two-column matrix." width="100%" />
+<p class="caption">
+Figure 6.1: Animation illustrating the steps of generating the flower plot with one uploaded two-column matrix.
+</p>
+</div>
+<ol style="list-style-type: decimal">
+<li>First, data matrix could be pasted to the text-area or selected from uploaded files.</li>
+<li>Second, We assume the <code>first</code> column contains <code>elements</code> and the <code>second</code> column contains <code>sets</code> name and will automatically get the names of each column to fill in. If your data matrix <strong>does not</strong> follow this assumption, one are allowed to change values of these two drop-down selection boxes. Check the hints (holding the cursor on the question mark symbol) along each parameter for details.</li>
+<li>Third, layout and color styles could be changed as required or leaved out for default. Click <code>Layout and colors</code> to open/close related parameters.</li>
+<li>Forth, the width and height of output picture could be modified (by clicking <code>Picture attributes</code>). <strong>Enlarge</strong> this number if the graphic displaying is incomplete.</li>
+<li>Fifth, clicking <code>Submit</code> button to get the result in PNG format showing below (could be saves by <code>right clicking on the picture</code>). The result picture could also be downloaded in PDF format by clicking <code>Download PDF</code> button.</li>
+</ol>
+</div>
+<div id="flowercolorpallete" class="section level2">
+<h2><span class="header-section-number">6.3</span> Color setting for flower plot</h2>
+<p>See Fig <a href="Euler-diagram.html#fig:ColorPicker">4.2</a>.</p>
+</div>
+<div id="flowerfun" class="section level2">
+<h2><span class="header-section-number">6.4</span> Fun with flower plot</h2>
+<p>Here shows the effect of switching the options between <code>Column containing all elements</code> and <code>Column containing all sets information</code>.</p>
+<div class="figure" style="text-align: center">
+<img src="image/large.flower.png" alt="Flower diagrams for many sets." width="100%" />
+<p class="caption">
+(#fig:flower_diagramfunpng)Flower diagrams for many sets.
+</p>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="UpSet.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="vennnetwork.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["EVennDoc.pdf"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

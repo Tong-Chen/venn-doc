@@ -56,5 +56,32 @@ knitr::include_graphics("image/questionMark.png")
 ```
 
 
+## Gallary {#gallary} 
+
+(ref:VennNetworkGallery1label) Venn network using data <DE_gene_file.txt> in [example data](#example_file).
+
+```{r VennNetworkGallery1, fig.cap="(ref:VennNetworkGallery1label)"}
+knitr::include_graphics("image/VennNetworkGallery1.png")
+```
+
+(ref:VennNetworkGalleryP53pathway) Venn network using data <Gene_enrichment.txt> in [example data](#example_file).
+
+```{r VennNetworkGalleryP53pathway, fig.cap="(ref:VennNetworkGallery1label)"}
+knitr::include_graphics("image/VennNetworkGalleryP53pathway.png")
+```
+
+(ref:Vennnetworkgallary12sets) Venn network using data <taxonomy_highabundance_manysets.txt> in [example data](#example_file).
+
+
+```{r Vennnetworkgallary12sets, fig.cap="(ref:VennNetworkGallery1label)"}
+knitr::include_graphics(c("image/Vennnetworkgallary12sets.png",
+                          "image/Vennnetworkgallary12setsparameters.png"))
+```
+
+
+
+
+
+
 
 

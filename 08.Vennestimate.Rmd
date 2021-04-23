@@ -1,0 +1,11 @@
+# Venn estimate {#vennestimate}
+
+Visualization would give qualitative but not quantitative estimation of sets similarity. However, it is usually needed to check the significance level of sets similarity to get more conclusive interpretations. We implied two commonly used methods: random sample test and Jaccard similarity test. 
+
+* Random sample test using random sampling process for 1000 times to check if given overlaps are random or not. 
+* Jaccard similarity test using the Jaccard similarity coefficient -- the ratio of intersection to union for statistical testing of similarity between binary data. 
+
+```{r vennestimatepng, fig.cap="Venn estimate." }
+knitr::include_graphics(c("image/Vennestimate.png"))
+```
+

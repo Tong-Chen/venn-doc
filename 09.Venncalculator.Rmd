@@ -1,0 +1,8 @@
+# Venn calculator {#venncalculator}
+
+There are also scenes that we want to quickly select candidate elements like genes or OTUs for downstream analysis before generating plots. Venn calculator is designed to output elements for intersections for any number of sets in table format for further exploring. Besides, the output could be easily giving to Euler diagram to generate plots without computing again.  
+
+```{r venncalculatorpng, fig.cap="Venn calculator." }
+knitr::include_graphics(c("image/Venncalculator.png"))
+```
+
