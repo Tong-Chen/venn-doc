@@ -88,7 +88,13 @@ This may be a common sense that question mark symbol (`?`) hides help informatio
 </div>
 
 
+## How to cite?
 
+EVenn is constructed since 2018 and is initially treated as a sub-tool of ImageGP (a free online plotting platform) with accessing address as www.ehbio.com/ImageGP/index.php/Home/Index/VennDiagram.html and has been cited directly for at least 16 times (according to google scholar). 
+
+In year 2021 we remodeled EVenn as an independent tool (http://www.ehbio.com/test/venn) to support more functions with much clearer user interface. In last month, there are 2,749 unique visitors for new EVenn with different IP (Internet Protocol Address) from China, American and Europe. Everyday there are about 100 visitors. Currently there are 3 citations for new EVenn. 
+
+Normally they would use `Venn diagrams were generated using EVenn (http://www.ehbio.com/test/venn).` as the citation sentences.
 
 
 
