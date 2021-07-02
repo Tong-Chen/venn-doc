@@ -15,20 +15,11 @@ site: bookdown::bookdown_site
 
 # Overview of EVenn
 
-[EVenn](http://www.ehbio.com/test/venn/#/) is constructed to generate Venn diagrams (classical and Edwards layout), Euler diagrams (proportional), UpSet, Flower plot and Venn network. Specially, we developed one unified data matrix as inputs for all tools. This type of input data could be easily prepared using Excel or other text-editors or simple programs. Once uploaded, the data file could be easily loaded to each tool to generate various displaying. This makes EVenn a more suitable tool for exploratory analysis and to choose the best way to explain and visualize data. In order to compute the significance of the overlap between two groups of elements which could be genes or OTUs, random sample test and Jaccard similarity test were applied. The tool Venn calculator could generate the counts and detailed elements for each non-empty intersection for datasets with any number of groups. The results could be used for downstream selection and also could be used as input for data visualization using EVenn. Evenn is available at http://www.ehbio.com/test/venn/. We also recorded a video showing how to generate 5 types of Venn diagrams in less than 3 minutes (which could be viewed in this tutorial or in YouTube with link https://youtu.be/sCEiaZpnL8Q or in China with link https://www.bilibili.com/video/BV1CK4y1P7Gi). 
+[EVenn](http://www.ehbio.com/test/venn/#/) is constructed to generate Venn diagrams (classical and Edwards layout), Euler diagrams (proportional), UpSet, Flower plot and Venn network. Specially, we developed one unified data matrix as inputs for all tools. This type of input data could be easily prepared using Excel or other text-editors or simple programs. Once uploaded, the data file could be easily loaded to each tool to generate various displaying. This makes EVenn a more suitable tool for exploratory analysis and to choose the best way to explain and visualize data. In order to compute the significance of the overlap between two groups of elements which could be genes or OTUs, random sample test and Jaccard similarity test were applied. The tool Venn calculator could generate the counts and detailed elements for each non-empty intersection for datasets with any number of groups. The results could be used for downstream selection and also could be used as input for data visualization using EVenn. Evenn is available at http://www.ehbio.com/test/venn/. We also recorded a video showing how to generate 5 types of Venn diagrams in less than 3 minutes (which could be viewed in <http://www.ehbio.com/test/venn/video/EVenn7.webm> or in YouTube with link <https://youtu.be/sCEiaZpnL8Q>). 
 
 <img src="image/Overviewvenn.png" width="100%" style="display: block; margin: auto;" />
 
 
-
-<video controls width="100%">
-    <source src="video/EVenn7.webm"  type="video/webm">
-    Sorry, your browser doesn't support embedded videos.
-</video>
-
-## Video at Youtube
-
-<iframe src="https://youtu.be/sCEiaZpnL8Q" width="100%" height="400px"></iframe>
 
 
 ## Demo data and animations
@@ -53,20 +44,13 @@ This may be a common sense that question mark symbol (`?`) hides help informatio
 
 ### Venn network for OTUs
 
-(ref:vennNetwork00label) Venn network using demo data Click <https://www.bilibili.com/video/BV1CK4y1P7Gi?p=2> to view the tutorials.
+(ref:vennNetwork00label) Venn network using demo data Click <http://www.ehbio.com/test/venn/video/EVennNetwork.webm> or <https://youtu.be/8zf_XuwaZRw> to view the tutorials.
 
 <div class="figure" style="text-align: center">
 <img src="image/vennNetwork00.png" alt="(ref:vennNetwork00label)" width="100%" />
 <p class="caption">(\#fig:vennNetwork00)(ref:vennNetwork00label)</p>
 </div>
 
-
-<video controls width="100%">
-    <source src="video/EVennNetwork.webm"  type="video/webm">
-    Sorry, your browser doesn't support embedded videos.
-</video>
-
-<iframe src="https://youtu.be/8zf_XuwaZRw" width="100%" height="400px"></iframe>
 
 ### Venn network for DE genes
 
