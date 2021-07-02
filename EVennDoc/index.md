@@ -4,7 +4,7 @@ author:
 - "Chen Tong"
 - "http://www.ehbio.com/test/venn"
 - "chent@nrc.ac.cn"
-date: "2021-04-29"
+date: "2021-07-02"
 documentclass: article
 site: bookdown::bookdown_site
 ---
@@ -20,9 +20,15 @@ site: bookdown::bookdown_site
 <img src="image/Overviewvenn.png" width="100%" style="display: block; margin: auto;" />
 
 
-<div style="position: relative; padding: 30% 45%;">
-<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?aid=887769592&bvid=BV1CK4y1P7Gi&cid=329859330&page=1&as_wide=1&high_quality=1&danmaku=0" frameborder="no" scrolling="no"></iframe>
-</div>
+
+<video controls width="100%">
+    <source src="video/EVenn7.webm"  type="video/webm">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+
+## Video at Youtube
+
+<iframe src="https://youtu.be/sCEiaZpnL8Q" width="100%" height="400px"></iframe>
 
 
 ## Demo data and animations
@@ -54,10 +60,13 @@ This may be a common sense that question mark symbol (`?`) hides help informatio
 <p class="caption">(\#fig:vennNetwork00)(ref:vennNetwork00label)</p>
 </div>
 
-<div style="position: relative; padding: 30% 45%;">
-<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?aid=887769592&bvid=BV1CK4y1P7Gi&cid=330770813&page=2&as_wide=1&high_quality=1&danmaku=0" frameborder="no" scrolling="no"></iframe>
-</div>
 
+<video controls width="100%">
+    <source src="video/EVennNetwork.webm"  type="video/webm">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+
+<iframe src="https://youtu.be/8zf_XuwaZRw" width="100%" height="400px"></iframe>
 
 ### Venn network for DE genes
 
