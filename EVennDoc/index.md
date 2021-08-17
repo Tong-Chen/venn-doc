@@ -4,7 +4,7 @@ author:
 - "Chen Tong"
 - "http://www.ehbio.com/test/venn"
 - "chent@nrc.ac.cn"
-date: "2021-07-02"
+date: "2021-08-17"
 documentclass: article
 site: bookdown::bookdown_site
 ---
@@ -16,6 +16,8 @@ site: bookdown::bookdown_site
 # Overview of EVenn
 
 [EVenn](http://www.ehbio.com/test/venn/#/) is constructed to generate Venn diagrams (classical and Edwards layout), Euler diagrams (proportional), UpSet, Flower plot and Venn network. Specially, we developed one unified data matrix as inputs for all tools. This type of input data could be easily prepared using Excel or other text-editors or simple programs. Once uploaded, the data file could be easily loaded to each tool to generate various displaying. This makes EVenn a more suitable tool for exploratory analysis and to choose the best way to explain and visualize data. In order to compute the significance of the overlap between two groups of elements which could be genes or OTUs, random sample test and Jaccard similarity test were applied. The tool Venn calculator could generate the counts and detailed elements for each non-empty intersection for datasets with any number of groups. The results could be used for downstream selection and also could be used as input for data visualization using EVenn. Evenn is available at http://www.ehbio.com/test/venn/. We also recorded a video showing how to generate 5 types of Venn diagrams in less than 3 minutes (which could be viewed in <http://www.ehbio.com/test/venn/video/EVenn7.webm> or in YouTube with link <https://youtu.be/sCEiaZpnL8Q>). 
+
+EVenn is published in `Journal of Genetics and Genomics`. Please cite Tong Chen, Haiyan Zhang, Yu Liu, Yong-Xin Liu, Luqi Huang. EVenn: Easy to create repeatable and editable Venn diagrams and Venn networks online. Journal of Genetics and Genomics. 2021 Aug 2. [doi: 10.1016/j.jgg.2021.07.007](https://doi.org/10.1016/j.jgg.2021.07.007). 
 
 <img src="image/Overviewvenn.png" width="100%" style="display: block; margin: auto;" />
 
@@ -83,11 +85,15 @@ This may be a common sense that question mark symbol (`?`) hides help informatio
 
 ## How to cite?
 
+Tong Chen, Haiyan Zhang, Yu Liu, Yong-Xin Liu, Luqi Huang. EVenn: Easy to create repeatable and editable Venn diagrams and Venn networks online. Journal of Genetics and Genomics. 2021 Aug 2. [doi: 10.1016/j.jgg.2021.07.007](https://doi.org/10.1016/j.jgg.2021.07.007). 
+
 EVenn is constructed since 2018 and is initially treated as a sub-tool of ImageGP (a free online plotting platform) with accessing address as www.ehbio.com/ImageGP/index.php/Home/Index/VennDiagram.html and has been cited directly for at least 16 times (according to google scholar). 
 
 In year 2021 we remodeled EVenn as an independent tool (http://www.ehbio.com/test/venn) to support more functions with much clearer user interface. In last month, there are 2,749 unique visitors for new EVenn with different IP (Internet Protocol Address) from China, American and Europe. Everyday there are about 100 visitors. Currently there are 3 citations for new EVenn. 
 
 Normally they would use `Venn diagrams were generated using EVenn (http://www.ehbio.com/test/venn).` as the citation sentences.
+
+
 
 
 

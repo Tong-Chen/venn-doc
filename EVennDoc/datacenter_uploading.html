@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>6 UpSet | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online</title>
-  <meta name="description" content="6 UpSet | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
+  <title>3 Upload files in data center | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online</title>
+  <meta name="description" content="3 Upload files in data center | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
   <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="6 UpSet | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
+  <meta property="og:title" content="3 Upload files in data center | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="6 UpSet | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
+  <meta name="twitter:title" content="3 Upload files in data center | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
   
   
   
@@ -33,8 +33,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="Euler_diagram.html"/>
-<link rel="next" href="flowerplot.html"/>
+<link rel="prev" href="inputfileformat.html"/>
+<link rel="next" href="Interactive_venn_diagram.html"/>
 <script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -162,37 +162,63 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="UpSet" class="section level1" number="6">
-<h1><span class="header-section-number">6</span> UpSet</h1>
-<p>Upset plot is designed as a novel visualization technique for the quantitative analysis of sets and their intersections (Fig <a href="UpSet.html#fig:upsetdiagrampng">6.1</a>). It composed three parts, a horizontal bar-plot showing total number of elements of each set, a matrix with connected-dots indicating all types of intersections among sets, a vertical bar-plot representing number of elements of corresponding intersections. The bars are normally ordered by item counts, giving more direct decision of the largest sets and intersections. Intersections which are empty could be selectively hided to save space for visualizing much more sets.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:upsetdiagrampng"></span>
-<img src="image/UpSet.png" alt="UpSet diagrams for 5 sets. Horizontal blue bars represent total number of elements of each set. Orange bars represent number of elements of each intersection indicated by connected dots." width="100%" />
-<p class="caption">
-Figure 6.1: UpSet diagrams for 5 sets. Horizontal blue bars represent total number of elements of each set. Orange bars represent number of elements of each intersection indicated by connected dots.
-</p>
-</div>
-<p>Currently UpSet (in EVenn) is not supported for data-sets with more than 15 sets.</p>
-<div id="upsettwotypeinput" class="section level2" number="6.1">
-<h2><span class="header-section-number">6.1</span> Two types of input ways</h2>
-<p>Euler diagram supports two types of input. One is the two-column mode format matrix as we described above (Fig <a href="inputfileformat.html#fig:fig1">2.1</a> A).</p>
-<p>The other is a binary matrix for illustrating elements existence (Fig <a href="inputfileformat.html#fig:fig1">2.1</a> G). In this format, the first line is the header line containing names of all sets. Each row represents one element. Each column represents each set. Each row represents one element. A value of non-zero representing the corresponding element belongs to the corresponding set.</p>
-</div>
-<div id="upsetpasting" class="section level2" number="6.2">
-<h2><span class="header-section-number">6.2</span> UpSet plot using two-column mode data matrix</h2>
-<p>Here we use an animation showing the simple steps of generating the UpSet with pasted two-column matrix (Fig <a href="UpSet.html#fig:UpSetAnimationgif">6.2</a>).</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:UpSetAnimationgif"></span>
-<img src="image/UpSetAnimation.gif" alt="Animation illustrating the steps of generating UpSet plot with pasted data matrix." width="100%" />
-<p class="caption">
-Figure 6.2: Animation illustrating the steps of generating UpSet plot with pasted data matrix.
-</p>
-</div>
+<div id="datacenter_uploading" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Upload files in data center</h1>
+<p><em>Attention</em>: The files would not be uploaded to our server in this step. They only exist in a local region in your web browser. These uploaded files would be lost after the web browser is closed. Also, one could not see these uploaded data in other web browsers.</p>
+<div id="uploadafile" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Upload a file</h2>
 <ol style="list-style-type: decimal">
-<li>First, data matrix could be pasted to the text-area or selected from uploaded files.</li>
-<li>Second, only one essential parameter to specify if the first line would be treated as header line.</li>
-<li>Third, users are allowed to set whether to keep empty intersections.</li>
-<li>Forth, the width and height of output picture could be modified. <strong>Enlarge</strong> this number if the graphic displaying is incomplete.</li>
-<li>Fifth, clicking <code>Submit</code> button to get the result in PNG format showing below (save by right clicking on the picture). The result picture could also be downloaded in <code>PDF</code> format by clicking <code>Download PDF button</code>.</li>
+<li>Drag your file or click to upload your file (Fig <a href="datacenter_uploading.html#fig:figdatacenter1">3.1</a> <font color="#FF0000">1</font> step).</li>
+<li>Input a name for your file for identification (Fig <a href="datacenter_uploading.html#fig:figdatacenter1">3.1</a> <font color="#FF0000">2</font> step).</li>
+<li>The content of the uploaded file would be loaded into the text area (Fig <a href="datacenter_uploading.html#fig:figdatacenter1">3.1</a> <font color="#FF0000">3</font> step). Users are allowed to browse and revise uploaded data if necessary.</li>
+<li>Remember to click <strong>Save</strong> or <strong>Submit</strong> to finish the uploading process (Fig <a href="datacenter_uploading.html#fig:figdatacenter1">3.1</a> <font color="#FF0000">4</font> step).</li>
+<li>Then your uploaded file would be shown in the file selector (Fig <a href="datacenter_uploading.html#fig:figdatacenter1">3.1</a> <font color="#FF0000">5</font> step). One can browse or delete unneeded files.</li>
 </ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figdatacenter1"></span>
+<img src="image/Datacenter1.png" alt="Upload your files." width="100%" />
+<p class="caption">
+Figure 3.1: Upload your files.
+</p>
+</div>
+<p>Here is an animation showing the processes.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:uploaddata1gif"></span>
+<img src="image/DragUploadFiles.gif" alt="Animation showing uploading processes." width="100%" />
+<p class="caption">
+Figure 3.2: Animation showing uploading processes.
+</p>
+</div>
+</div>
+<div id="paste-your-data-here" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Paste your data here</h2>
+<ol style="list-style-type: decimal">
+<li>Input a name for your file for identification (Fig <a href="datacenter_uploading.html#fig:figdatacenter2">3.3</a> <font color="#FF0000">1</font> step).</li>
+<li>Paste the data matrix to the text area (Fig <a href="datacenter_uploading.html#fig:figdatacenter2">3.3</a> <font color="#FF0000">2</font> step).</li>
+<li>Remember to click <strong>Save</strong> or <strong>Submit</strong> to finish the saving process (Fig <a href="datacenter_uploading.html#fig:figdatacenter2">3.3</a> <font color="#FF0000">3</font> step).</li>
+<li>Then your uploaded file would be shown in the file selector (Fig <a href="datacenter_uploading.html#fig:figdatacenter2">3.3</a> <font color="#FF0000">4</font> step). One can browse or delete unneeded files.</li>
+</ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figdatacenter2"></span>
+<img src="image/Datacenter2.png" alt="Paste your files." width="100%" />
+<p class="caption">
+Figure 3.3: Paste your files.
+</p>
+</div>
+<p>Here is an animation showing the processes.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:pasteuploaddata1gif"></span>
+<img src="image/PasteUploadFiles.gif" alt="Animation showing pasting as uploading." width="100%" />
+<p class="caption">
+Figure 3.4: Animation showing pasting as uploading.
+</p>
+</div>
+</div>
+<div id="example_file" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Example files</h2>
+<p>If you accidentally clicked these files directly, use the <code>back</code> button on <code>left-top</code> corner of your web browser to return back.</p>
+<ul>
+<li>List of differentially expressed genes: <a href="data/DE_gene_file.txt">DE_gene_file.txt</a> (<em>right click to save</em>)</li>
+<li>Gene enrichment results: <a href="data/Gene_enrichment.txt">Gene_enrichment.txt</a> (<em>right click to save</em>)</li>
+<li>List of high abundance OTUs in each group: <a href="data/High_abundance_OTU.txt">High_abundance_OTU.txt</a> (<em>right click to save</em>)</li>
+<li>List of high abundance taxonomy for many groups: <a href="data/taxonomy_highabundance_manysets.txt">taxonomy_highabundance_manysets.txt</a> (<em>right click to save</em>)</li>
+</ul>
 
 </div>
 </div>
@@ -201,8 +227,8 @@ Figure 6.2: Animation illustrating the steps of generating UpSet plot with paste
           </div>
         </div>
       </div>
-<a href="Euler_diagram.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="flowerplot.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="inputfileformat.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="Interactive_venn_diagram.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

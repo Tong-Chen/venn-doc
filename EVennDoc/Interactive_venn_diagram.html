@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>6 UpSet | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online</title>
-  <meta name="description" content="6 UpSet | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
+  <title>4 Interactive venn diagram | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online</title>
+  <meta name="description" content="4 Interactive venn diagram | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
   <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="6 UpSet | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
+  <meta property="og:title" content="4 Interactive venn diagram | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="6 UpSet | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
+  <meta name="twitter:title" content="4 Interactive venn diagram | EVenn: Easy to create repeatable, editable, and statistically measurable Venn diagrams online" />
   
   
   
@@ -33,8 +33,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="Euler_diagram.html"/>
-<link rel="next" href="flowerplot.html"/>
+<link rel="prev" href="datacenter_uploading.html"/>
+<link rel="next" href="Euler_diagram.html"/>
 <script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -162,37 +162,75 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="UpSet" class="section level1" number="6">
-<h1><span class="header-section-number">6</span> UpSet</h1>
-<p>Upset plot is designed as a novel visualization technique for the quantitative analysis of sets and their intersections (Fig <a href="UpSet.html#fig:upsetdiagrampng">6.1</a>). It composed three parts, a horizontal bar-plot showing total number of elements of each set, a matrix with connected-dots indicating all types of intersections among sets, a vertical bar-plot representing number of elements of corresponding intersections. The bars are normally ordered by item counts, giving more direct decision of the largest sets and intersections. Intersections which are empty could be selectively hided to save space for visualizing much more sets.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:upsetdiagrampng"></span>
-<img src="image/UpSet.png" alt="UpSet diagrams for 5 sets. Horizontal blue bars represent total number of elements of each set. Orange bars represent number of elements of each intersection indicated by connected dots." width="100%" />
+<div id="Interactive_venn_diagram" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Interactive venn diagram</h1>
+<p>This module supports interactive Venn diagram plotting and exploring for at most 6 sets. Through clicking figures in generated plots, one could easily get elements lists for each intersection part. This would facilitate screening candidate elements like genes or OTUs meeting specified intersection patterns.</p>
+<p>Besides, it has several functions like switching between standard <em>Venn layout</em> and <em>Edwards-Venn layout</em>, switch on and off different lists for comparing.</p>
+<p>Another useful improvement compared with Jvenn is that one can reorder each set to get better visualization by simple dragging of input text-areas. This function is especially useful when one wants to delete one or several sets, no need of re-input for already existed sets (Fig <a href="Interactive_venn_diagram.html#fig:InteractiveVennDiagramoupload">4.4</a>).
+There are also parameters for changing font sizes, font families, sets colors and other displaying attributes.</p>
+<div id="threetypeinputway" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Three types of input ways</h2>
+<p>Three types of input ways are supported for more feasible usages,
+* uploading or pasting all data together using two-column formats (Two-column mode, which is the default) ((Fig <a href="inputfileformat.html#fig:fig1">2.1</a> A) and Fig <a href="Interactive_venn_diagram.html#fig:interactiveVennInit">4.1</a> <font color="#FF0000">1</font>),
+* directly pasting elements of each set (Input elements) ((Fig <a href="inputfileformat.html#fig:fig1">2.1</a> E) and Fig <a href="Interactive_venn_diagram.html#fig:interactiveVennInit">4.1</a> <font color="#FF0000">2</font>),
+* typing in counts of each intersections (Input numbers) ((Fig <a href="inputfileformat.html#fig:fig1">2.1</a> F) and Fig <a href="Interactive_venn_diagram.html#fig:interactiveVennInit">4.1</a> <font color="#FF0000">3</font>).</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:interactiveVennInit"></span>
+<img src="image/interactiveVennInit.png" alt="Three types of input ways." width="100%" />
 <p class="caption">
-Figure 6.1: UpSet diagrams for 5 sets. Horizontal blue bars represent total number of elements of each set. Orange bars represent number of elements of each intersection indicated by connected dots.
+Figure 4.1: Three types of input ways.
 </p>
 </div>
-<p>Currently UpSet (in EVenn) is not supported for data-sets with more than 15 sets.</p>
-<div id="upsettwotypeinput" class="section level2" number="6.1">
-<h2><span class="header-section-number">6.1</span> Two types of input ways</h2>
-<p>Euler diagram supports two types of input. One is the two-column mode format matrix as we described above (Fig <a href="inputfileformat.html#fig:fig1">2.1</a> A).</p>
-<p>The other is a binary matrix for illustrating elements existence (Fig <a href="inputfileformat.html#fig:fig1">2.1</a> G). In this format, the first line is the header line containing names of all sets. Each row represents one element. Each column represents each set. Each row represents one element. A value of non-zero representing the corresponding element belongs to the corresponding set.</p>
+<p>The result picture could be exported in the scalable vector graphics (SVG) format which could be converted to high-resolution images or combined with other pictures for publication usages. Elements lists for each intersection could be downloaded in table format.</p>
 </div>
-<div id="upsetpasting" class="section level2" number="6.2">
-<h2><span class="header-section-number">6.2</span> UpSet plot using two-column mode data matrix</h2>
-<p>Here we use an animation showing the simple steps of generating the UpSet with pasted two-column matrix (Fig <a href="UpSet.html#fig:UpSetAnimationgif">6.2</a>).</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:UpSetAnimationgif"></span>
-<img src="image/UpSetAnimation.gif" alt="Animation illustrating the steps of generating UpSet plot with pasted data matrix." width="100%" />
+<div id="intervennpasting" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Pasting two-column mode data matrix</h2>
+<p>Here we use an animation showing the simple steps of generating and exploring an interactive Venn diagram with pasted two-column matrix (Fig <a href="Interactive_venn_diagram.html#fig:InteractiveVennDiagramopate">4.2</a>).</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:InteractiveVennDiagramopate"></span>
+<img src="image/InteractiveVennDiagram.op.gif" alt="Animation illustrating the steps of generating interactive venn diagrams with pasted data matrix." width="100%" />
 <p class="caption">
-Figure 6.2: Animation illustrating the steps of generating UpSet plot with pasted data matrix.
+Figure 4.2: Animation illustrating the steps of generating interactive venn diagrams with pasted data matrix.
 </p>
 </div>
+<p>We split these steps separately.</p>
 <ol style="list-style-type: decimal">
-<li>First, data matrix could be pasted to the text-area or selected from uploaded files.</li>
-<li>Second, only one essential parameter to specify if the first line would be treated as header line.</li>
-<li>Third, users are allowed to set whether to keep empty intersections.</li>
-<li>Forth, the width and height of output picture could be modified. <strong>Enlarge</strong> this number if the graphic displaying is incomplete.</li>
-<li>Fifth, clicking <code>Submit</code> button to get the result in PNG format showing below (save by right clicking on the picture). The result picture could also be downloaded in <code>PDF</code> format by clicking <code>Download PDF button</code>.</li>
+<li>Paste your data matrix in two-column mode to the text-area (Fig <a href="Interactive_venn_diagram.html#fig:InteractiveVennDiagram1">4.3</a> <font color="#FF0000">1</font> step).</li>
+<li>Select which set to be analyzed in order. Unique value of the second column (including the header line if existed) would be saved in the drop-down menu as set names for selection (Fig <a href="Interactive_venn_diagram.html#fig:InteractiveVennDiagram1">4.3</a> <font color="#FF0000">2</font> step). After several selection, we could get one Venn diagram showing left-top.</li>
+<li>Set order could also be changed by holding on button (Fig <a href="Interactive_venn_diagram.html#fig:InteractiveVennDiagram1">4.3</a> <font color="#FF0000">3</font>) and dragging to the target position.</li>
+<li>color of each set could be customized separately using the color-picker beside set names (Fig <a href="Interactive_venn_diagram.html#fig:InteractiveVennDiagram1">4.3</a> <font color="#FF0000">4</font>).</li>
+<li>Global configuration parameters could be switched on by clicking button (Fig <a href="Interactive_venn_diagram.html#fig:InteractiveVennDiagram1">4.3</a> <font color="#FF0000">5</font>), including display mode, font family, font size, statistics based on input lists (number of elements for each set), switch button, intersection counts. One could easily check their functions if not clearly described by simple clicking.</li>
+<li>Venn diagrams in <em>PNG</em>, <em>SVG</em> format and intersection elements in <em>CSV</em> lists could be downloaded by clicking button (Fig <a href="Interactive_venn_diagram.html#fig:InteractiveVennDiagram1">4.3</a> <font color="#FF0000">6</font>). In CSV lists, one column represents one type of non-empty intersections and attached elements.</li>
+<li>Click the count number in the Venn diagram would show the elements belonging to this intersection in below text-area with one headline showing elements’ belonging.</li>
 </ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:InteractiveVennDiagram1"></span>
+<img src="image/InteractiveVennDiagram1.png" alt="Displaying the steps for generating interactive venn diagrams with pasted data matrix in two-column mode." width="100%" />
+<p class="caption">
+Figure 4.3: Displaying the steps for generating interactive venn diagrams with pasted data matrix in two-column mode.
+</p>
+</div>
+</div>
+<div id="vennupload" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Use the uploaded two-column mode data matrix</h2>
+<p>Here we use an animation showing how to choose the uploaded data matrix (seeing section <a href="datacenter_uploading.html#datacenter_uploading">2</a> for data uploading), selecting sets, removing sets, reordering sets and other operations for 6 sets (Fig <a href="Interactive_venn_diagram.html#fig:InteractiveVennDiagramoupload">4.4</a>).</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:InteractiveVennDiagramoupload"></span>
+<img src="image/InteractiveVennDiagram.ou.gif" alt="An animation illustrating the steps of generating interactive venn diagrams with previously uploaded data matrix." width="100%" />
+<p class="caption">
+Figure 4.4: An animation illustrating the steps of generating interactive venn diagrams with previously uploaded data matrix.
+</p>
+</div>
+</div>
+<div id="venneachset" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Pasting elements of each set</h2>
+<p>Most online Venn diagram tools use this kind of input, pasting elements for each set separately and name each set on the fly.</p>
+</div>
+<div id="venninputcount" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> Input numbers for each intersection</h2>
+<p>This is sometimes useful for drawing Venn diagrams without elements but only numbers, such as the counting results of cell immunofluorescence experiments: how many cells are stained as <font color="#FF0000">red</font>, how many cells are stained as <font color="#00FF00">green</font>, how many cells have merged color of <font color="#FFFF00">yellow</font>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:pastenumbersvenngif"></span>
+<img src="image/pastenumbersvenn.gif" alt="Draw Venn diagrams with number input. Only support 2-4 sets." width="100%" />
+<p class="caption">
+Figure 4.5: Draw Venn diagrams with number input. Only support 2-4 sets.
+</p>
+</div>
 
 </div>
 </div>
@@ -201,8 +239,8 @@ Figure 6.2: Animation illustrating the steps of generating UpSet plot with paste
           </div>
         </div>
       </div>
-<a href="Euler_diagram.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="flowerplot.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="datacenter_uploading.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="Euler_diagram.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
